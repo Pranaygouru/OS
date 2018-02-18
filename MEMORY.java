@@ -4,7 +4,6 @@ public class MEMORY {
 		// TODO Auto-generated method stub
 		if(x==0 && y<256)
 		{
-			y=y+1;
 			z=SYSTEM.mainmemoryarray[y];
 		}
 		if(x==1 && y<256)

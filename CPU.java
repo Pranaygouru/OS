@@ -10,17 +10,22 @@ public class CPU {
 	static String[] S=new String[8];
 	public Object CPU(int ProgramCounter, int TraceSwitch) {
 		 int ZeroAddress=0;
-		//System.out.println(SYSTEM.mainmemoryarray[4]);
+		 //System.out.println(SYSTEM.mainmemoryarray[41]);
 		 SYSTEM.InstructionRegister = SYSTEM.mainmemoryarray[SYSTEM.Program_counter];
 		 System.out.println(srno+")."+SYSTEM.InstructionRegister);
 		 srno++;
+		 System.out.println(TOS);
+		for(int var=0;var<S.length;var++) {
+			System.out.println(S[var]);
+		}
+		
 			//System.out.println(SYSTEM.Program_counter);
 		 if(SYSTEM.InstructionRegister.charAt(0) =='0')
 		 {
 			 String Opcode=SYSTEM.InstructionRegister.substring(1,6);
 			 while(ZeroAddress<2)
 			 {	 
-			 //System.out.println(Opcode);
+			 System.out.println(Opcode);
 			 switchopcode=Integer.parseInt(Opcode,2); 
 			// System.out.println(switchopcode);
 			if (TOS>=0 && TOS<7)
@@ -28,15 +33,19 @@ public class CPU {
 				if(S[TOS]!=null)
 				{
 					stack=Integer.parseInt(S[TOS],2);
+					System.out.println(stack);
+				}
 				if(S[TOS+1]!=null) {
 					stackplus=Integer.parseInt(S[TOS+1],2);
 				}
+				if(TOS>0)
 				if(S[TOS-1]!=null)
 				{
 				stackminus=Integer.parseInt(S[TOS-1],2);
 				}
-				}
+				
 				//System.out.println(switchopcode);
+				if(switchopcode<32000)
 			 switch(switchopcode)
 			 {
 			 case 0:
@@ -156,13 +165,16 @@ public class CPU {
 		 if(SYSTEM.InstructionRegister.charAt(0) =='1')
 		 {
 			 String Opcodeone=SYSTEM.InstructionRegister.substring(1,6);
-			 //System.out.println(Opcodeone);
+			// System.out.println(Opcodeone);
 			 String EA=SYSTEM.InstructionRegister.substring(9,16);
-			 
+			 //System.out.println(EA);
 			 switchopcodezero=Integer.parseInt(Opcodeone,2);
+			 //System.out.println(switchopcodezero);
 			 int DecimalEA=Integer.parseInt(EA,2);
+			 System.out.println(DecimalEA);
 			 String Z=SYSTEM.BufferRegister;
 			 String memor=MEMORY.MEMORY(0,DecimalEA,Z);
+			 System.out.println(memor);
 			 Z=memor;
 			 int ee=Integer.parseInt(Z,2);
 			 //String ValueAtmemory=SYSTEM.MEMORY(X,Y,Z);
@@ -182,6 +194,7 @@ public class CPU {
 				 stackminus=Integer.parseInt(S[TOS-1],2);
 				 }
 				 }
+				 if(switchopcodezero<32000)
 			 switch(switchopcodezero)
 			 {
 			 case 0:
@@ -196,27 +209,21 @@ public class CPU {
 				 break;
 			 case 4:
 				 stack=stack^ee;
-				
 				 break;
 			 case 5:
 				 stack=stack+ee;
-			
 				 break;
 			 case 6:
 				 stack=stack-ee;
-				
 				 break;
 			 case 7:
 				 stack=stack*ee;
-				
 				 break;
 			 case 8: 
 				 stack=stack/ee;
-				
 				 break;
 			 case 9:
 				 stack=stack%ee;
-				
 				 break;
 			 case 10:
 				 break;
@@ -229,10 +236,11 @@ public class CPU {
 				 if(stack > ee)
 				 {
 					 stackplus=1;
+					 
 				 }
-				// System.out.println(stackplus);
-				// System.out.println(stack); 
-				// System.out.println(ee);
+				 S[TOS+1]=Integer.toBinaryString(stackplus);
+				 System.out.println(stack); 
+				 System.out.println(ee);
 				 if(TOS<7)
 				 TOS=TOS+1;
 				 //stack=stackplus;
@@ -307,13 +315,13 @@ public class CPU {
 			 case 22:
 				 TOS=TOS+1;
 				 stack=ee;
-				 //System.out.println(ee);
-				 //System.out.println(ee);
+				 System.out.println(ee);
 				 break;
 			 case 23:
 				 EA=Integer.toBinaryString(stack);
-				 MEMORY.MEMORY(1,DecimalEA,EA);
 				 TOS=TOS-1;
+				 MEMORY.MEMORY(1,DecimalEA,EA);
+				 
 			 case 24:
 				 break;
 			 default:
