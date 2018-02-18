@@ -4,115 +4,106 @@ import java.util.Stack;
 public class CPU {
 	static int TOS=0;
 	static int switchopcode=0,switchopcodezero=0;
-	public void CPU(String ProgramCounter, String TraceSwitch) {
-		// TODO Auto-generated method stub
-		 String[] S=new String[8];
-		 int ZeroAddress=0,Temp=0,Temptos=1,Tempplus=0,temppc=0;
-		 String sc = new BigInteger(ProgramCounter, 16).toString(2);
-		 //System.out.println(sc);
-		 int DecimalValue=Integer.parseInt(sc,2);
-		 //System.out.println(DecimalValue);
-		 SYSTEM.InstructionRegister = SYSTEM.mainmemoryarray[DecimalValue];
-		 System.out.println(SYSTEM.InstructionRegister);
+	static int Onlyhex=1,test=0;
+	static int DecimalValue=0,srno=1;
+	static int temppc=0,stack=0,stackplus=0,stackminus=0;
+	static String[] S=new String[8];
+	public Object CPU(int ProgramCounter, int TraceSwitch) {
+		 int ZeroAddress=0;
+		//System.out.println(SYSTEM.mainmemoryarray[4]);
+		 SYSTEM.InstructionRegister = SYSTEM.mainmemoryarray[SYSTEM.Program_counter];
+		 System.out.println(srno+")."+SYSTEM.InstructionRegister);
+		 srno++;
+			//System.out.println(SYSTEM.Program_counter);
 		 if(SYSTEM.InstructionRegister.charAt(0) =='0')
 		 {
-			 String Opcode=SYSTEM.InstructionRegister.substring(2,7);
+			 String Opcode=SYSTEM.InstructionRegister.substring(1,6);
 			 while(ZeroAddress<2)
-			 {
-			 System.out.println(Opcode);
-			 switchopcode=Integer.parseInt(Opcode,2);
-			 System.out.println(switchopcode);
-			 if(S[TOS]!=null && TOS>0)
-			 {
-			  Temp=Integer.parseInt(S[TOS],2);
-			  Temptos=Integer.parseInt(S[TOS-1],2);
-			 Tempplus=Integer.parseInt(S[TOS+1],2);
-			 }
+			 {	 
+			 //System.out.println(Opcode);
+			 switchopcode=Integer.parseInt(Opcode,2); 
+			// System.out.println(switchopcode);
+			if (TOS>=0 && TOS<7)
+			{
+				if(S[TOS]!=null)
+				{
+					stack=Integer.parseInt(S[TOS],2);
+				if(S[TOS+1]!=null) {
+					stackplus=Integer.parseInt(S[TOS+1],2);
+				}
+				if(S[TOS-1]!=null)
+				{
+				stackminus=Integer.parseInt(S[TOS-1],2);
+				}
+				}
+				//System.out.println(switchopcode);
 			 switch(switchopcode)
 			 {
 			 case 0:
 				 break;
 			 case 1:
-				 Temptos=Temp|Temptos;
-				 S[TOS-1]=Integer.toBinaryString(Temptos);
+				stackminus=stack|stackminus;	
 				 TOS=TOS-1;
 				 break;
 			 case 2:
-				 Temptos=Temp&Temptos;
-				 S[TOS-1]=Integer.toBinaryString(Temptos);
+				 stackminus=stack&stackminus;
 				 TOS=TOS-1;
 				 break;
 			 case 3:
-				 Temp=~Temp;
-				 S[TOS]=Integer.toBinaryString(Temp);
+				 stack=~stack;
 				 break;
 			 case 4:
-				 
-				 Temptos=Temp^Temptos;
-				 S[TOS-1]=Integer.toBinaryString(Temptos);
+				 stackminus=stack^stackminus;
 				 TOS=TOS-1;
 				 break;
 			 case 5:
-				 Temptos=Temp+Temptos;
-				 S[TOS-1]=Integer.toBinaryString(Temptos);
+				 stackminus=stack+stackminus;
 				 TOS=TOS-1;
 				 break;
 			 case 6:
-				 Temptos=Temp-Temptos;
-				 S[TOS-1]=Integer.toBinaryString(Temptos);
+				 stackminus=stack-stackminus;
 				 TOS=TOS-1;
 				 break;
 			 case 7:
-				 Temptos=Temp*Temptos;
-				 S[TOS-1]=Integer.toBinaryString(Temptos);
+				 stackminus=stack*stackminus;
 				 TOS=TOS-1;
 				 break;
 			 case 8: 
-				 Temptos=Temp/Temptos;
-				 S[TOS-1]=Integer.toBinaryString(Temptos);
+				 stackminus=stack/stackminus;
 				 TOS=TOS-1;
 				 break;
 			 case 9:
-				 Temptos=Temp%Temptos;
-				 S[TOS-1]=Integer.toBinaryString(Temptos);
+				 stackminus=stack%stackminus;
 				 TOS=TOS-1;
 				 break;
 			 case 10:
-				 Temp=Temp<<1;
-				 S[TOS]=Integer.toBinaryString(Temp);
+				 System.out.println(stack);
+				 stack=stack<<1;
+				 System.out.println(stack);
 				 break;
 			 case 11:
-				 Temp=Temp>>1;
-				 S[TOS]=Integer.toBinaryString(Temp);
+				 stack=stack>>1;
 				 break;
 			 case 12:
-				 if(Temptos > Temp)
+				 if(stackminus > stack)
 				 {
-					 Tempplus=1;
+					 stackplus=1;
 				 }
-				 else
-					 Tempplus=0;
-				 S[TOS+1]=Integer.toBinaryString(Tempplus);
 				 TOS=TOS+1;
 				 break;
 			 case 13:
-				 if(Temptos < Temp)
+				 if(stackminus < stack)
 				 {
-					 Tempplus=1;
+					 stackplus=1;
 				 }
-				 else
-					 Tempplus=0;
-				 S[TOS+1]=Integer.toBinaryString(Tempplus);
 				 TOS=TOS+1;
+				 
 				 break;
 			 case 14:
-				 if(Temptos == Temp)
+				 if(stackminus == stack)
 				 {
-					 Tempplus=1;
+					 stackplus=1;
 				 }
-				 else
-					 Tempplus=0;
-				 S[TOS+1]=Integer.toBinaryString(Tempplus);
 				 TOS=TOS+1;
 				 break;
 			 case 15:
@@ -125,16 +116,15 @@ public class CPU {
 				 break;
 			 case 19:
 				 TOS=TOS+1;
-				 Temp=SYSTEM.in.nextInt();
-				 S[TOS]=Integer.toBinaryString(Temp);
-				 System.out.println(S[TOS]);
+				 S[TOS]=Integer.toBinaryString(SYSTEM.in.nextInt());
+				 //System.out.println(stack);
 				 break;
 			 case 20:
 				 TOS=TOS-1;
-				 System.out.println(S[TOS]);
+				 System.out.println(stack+"hello world");
 				 break;
 			 case 21:
-				 SYSTEM.Program_counter=S[TOS];
+				 SYSTEM.Program_counter=stack;
 				 TOS=TOS-1;
 				 break;
 			 case 22:
@@ -146,129 +136,168 @@ public class CPU {
 			 default:
 				 break; 
 			 }
+			}
 			 ZeroAddress++;
 			 if(switchopcode==24)
 				 break;
 			 Opcode=SYSTEM.InstructionRegister.substring(11,16);
 			 }
 			 if((switchopcode >= 0) && (switchopcode <= 24)) {
-				 System.out.println(SYSTEM.Program_counter);
-				 temppc=Integer.parseInt(SYSTEM.Program_counter,16);
+				
+				 temppc=SYSTEM.Program_counter;
 				 temppc=temppc+1;
-				 System.out.println(temppc);
-				 SYSTEM.Program_counter=Integer.toBinaryString(temppc);
-			 }	 
+				// System.out.println(temppc);
+				 SYSTEM.Program_counter=temppc;
+				// System.out.println(SYSTEM.Program_counter);
+			 }	
+			 ZeroAddress=0;
 		 }	 
-		 Temp=0;
-		 Temptos=1;
-		 Tempplus=0;
+		
 		 if(SYSTEM.InstructionRegister.charAt(0) =='1')
 		 {
-			 String Opcodeone=SYSTEM.InstructionRegister.substring(2,7);
+			 String Opcodeone=SYSTEM.InstructionRegister.substring(1,6);
+			 //System.out.println(Opcodeone);
 			 String EA=SYSTEM.InstructionRegister.substring(9,16);
+			 
 			 switchopcodezero=Integer.parseInt(Opcodeone,2);
-			 int switchopcodezeroEA=Integer.parseInt(EA,2);
-			 int MofEA=Integer.parseInt(SYSTEM.mainmemoryarray[switchopcodezeroEA],2);
-			 System.out.println(switchopcodezero);
-			 if(S[TOS]!=null && TOS>0)
+			 int DecimalEA=Integer.parseInt(EA,2);
+			 String Z=SYSTEM.BufferRegister;
+			 String memor=MEMORY.MEMORY(0,DecimalEA,Z);
+			 Z=memor;
+			 int ee=Integer.parseInt(Z,2);
+			 //String ValueAtmemory=SYSTEM.MEMORY(X,Y,Z);
+			// int ee=Integer.parseInt(SYSTEM.mainmemoryarray[switchopcodezeroEA],2);
+			 //System.out.println(switchopcodezero);
+			 if(TOS>=0 && TOS<7)
 			 {
-			  Temp=Integer.parseInt(S[TOS],2);
-			  Temptos=Integer.parseInt(S[TOS-1],2);
-			 Tempplus=Integer.parseInt(S[TOS+1],2);
-			 }
+				 if(S[TOS]!=null)
+				 {
+				 stack=Integer.parseInt(S[TOS],2);
+				 if(S[TOS+1]!=null)
+				 {
+				  stackplus=Integer.parseInt(S[TOS+1],2);
+				 }
+				 if(S[TOS-1]!=null)
+				 {
+				 stackminus=Integer.parseInt(S[TOS-1],2);
+				 }
+				 }
 			 switch(switchopcodezero)
 			 {
 			 case 0:
 				 break;
 			 case 1:
-				 Temp=Temp|MofEA;
-				 S[TOS]=Integer.toBinaryString(Temp);
+				 stack=stack|ee;
 				 break;
 			 case 2:
-				 Temp=Temp&MofEA;
-				 S[TOS]=Integer.toBinaryString(Temp);
+				 stack=stack&ee;
 				 break;
 			 case 3:
 				 break;
 			 case 4:
-				 Temp=Temp^MofEA;
-				 S[TOS]=Integer.toBinaryString(Temp);
+				 stack=stack^ee;
+				
 				 break;
 			 case 5:
-				 Temp=Temp+MofEA;
-				 S[TOS]=Integer.toBinaryString(Temp);
+				 stack=stack+ee;
+			
 				 break;
 			 case 6:
-				 Temp=Temp-MofEA;
-				 S[TOS]=Integer.toBinaryString(Temp);
+				 stack=stack-ee;
+				
 				 break;
 			 case 7:
-				 Temp=Temp*MofEA;
-				 S[TOS]=Integer.toBinaryString(Temp);
+				 stack=stack*ee;
+				
 				 break;
 			 case 8: 
-				 Temp=Temp/MofEA;
-				 S[TOS]=Integer.toBinaryString(Temp);
+				 stack=stack/ee;
+				
 				 break;
 			 case 9:
-				 Temp=Temp%MofEA;
-				 S[TOS]=Integer.toBinaryString(Temp);
+				 stack=stack%ee;
+				
 				 break;
 			 case 10:
 				 break;
 			 case 11:
 				 break;
 			 case 12:
-				 if(Temp > MofEA)
+				// for(String print:S)
+				// System.out.println(print);
+				
+				 if(stack > ee)
 				 {
-					 Tempplus=1;
+					 stackplus=1;
 				 }
-				 else
-					 Tempplus=0;
-				 S[TOS+1]=Integer.toBinaryString(Tempplus);
+				// System.out.println(stackplus);
+				// System.out.println(stack); 
+				// System.out.println(ee);
+				 if(TOS<7)
 				 TOS=TOS+1;
+				 //stack=stackplus;
+				 //System.out.println(stack);
 				 break;
 			 case 13:
-				 if(Temptos < Temp)
+				 if(stack < ee)
 				 {
-					 Tempplus=1;
+					 stackplus=1;
 				 }
 				 else
-					 Tempplus=0;
-				 S[TOS+1]=Integer.toBinaryString(Tempplus);
+				 {
 				 TOS=TOS+1;
+				 }
 				 break;
 			 case 14:
-				 if(Temptos == Temp)
+				 if(stack == ee)
 				 {
-					 Tempplus=1;
+					 stackplus=1;
 				 }
 				 else
-					 Tempplus=0;
-				 S[TOS+1]=Integer.toBinaryString(Tempplus);
+				 {
 				 TOS=TOS+1;
+				 }
 				 break;
 			 case 15:
-				 SYSTEM.Program_counter=EA;
+				 SYSTEM.Program_counter=Integer.parseInt(EA,2);
+				 System.out.println(SYSTEM.Program_counter);
+				 test=1;
 				 break;
 			 case 16:
-				 if(Temp==1)
+				 System.out.println(stack);
+				 if(stack==1)
 				 {
-					 SYSTEM.Program_counter=EA; 
+					 SYSTEM.Program_counter=Integer.parseInt(EA,2); 
+					 test=1;
 				 }
+				 else
+				 {
 				 TOS=TOS-1;
+				 }
 				 break;
 			 case 17:
-				 if(Temp==0)
+				 //System.out.println(stack);
+				 if(stack==0)
 				 {
-					 SYSTEM.Program_counter=EA; 
+					 SYSTEM.Program_counter=Integer.parseInt(EA,2); 
+					 test=1;
 				 }
+				 else
+				 {
 				 TOS=TOS-1;
+				 }
 				 break;
 			 case 18:
 				TOS=TOS+1;
-				S[TOS]=SYSTEM.Program_counter;
-				SYSTEM.Program_counter=EA; 
+				//int program_decimal=Integer.parseInt(SYSTEM.Program_counter,2);
+				String pcc=Integer.toBinaryString(SYSTEM.Program_counter);
+				String form="%16s";
+				String splitstring = String.format(form, pcc).replace(" ", "0");
+				S[TOS]=splitstring;
+				SYSTEM.Program_counter=Integer.parseInt(EA,2);
+				//System.out.println(SYSTEM.Program_counter);
+				SYSTEM.Program_counter--;
+				//CPU(SYSTEM.Program_counter,1);
 			 case 19:
 				 break;
 			 case 20:
@@ -277,24 +306,31 @@ public class CPU {
 				 break;
 			 case 22:
 				 TOS=TOS+1;
-				 Temp=MofEA;
-				 S[TOS]=Integer.toBinaryString(Temp);
+				 stack=ee;
+				 //System.out.println(ee);
+				 //System.out.println(ee);
 				 break;
 			 case 23:
-				 EA=S[TOS];
+				 EA=Integer.toBinaryString(stack);
+				 MEMORY.MEMORY(1,DecimalEA,EA);
 				 TOS=TOS-1;
 			 case 24:
 				 break;
 			 default:
 				 break;
 			 }
-			 if((switchopcode >= 0) && (switchopcode <= 24)) {
-				 System.out.println(SYSTEM.Program_counter);
-				 temppc=Integer.parseInt(SYSTEM.Program_counter,16);
-				 temppc=temppc+1;
-				 System.out.println(temppc);
-				 SYSTEM.Program_counter=Integer.toBinaryString(temppc);
+			 }
+			 if((switchopcodezero < 0) && (switchopcodezero >= 24) || (test==1)) {
+				 test=0;
+				SYSTEM.exit();
+			 } 
+				else {
+					SYSTEM.Program_counter=SYSTEM.Program_counter+1;
+				}
+			 
 		 }
+		 
+		 return CPU(SYSTEM.Program_counter,1);
 	}
-
+	
 }

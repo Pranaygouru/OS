@@ -12,7 +12,6 @@ public class Loader {
 			 reader=new BufferedReader(fr);
 			 line=reader.readLine();	
 			 int mainindex=0;
-			
 			 while((line = reader.readLine()) != null)
 			 {
 		    //System.out.println(line);  
