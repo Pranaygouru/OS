@@ -7,7 +7,9 @@ public class CPU {
 	static int Onlyhex=1,test=0;
 	static int DecimalValue=0,srno=1;
 	static int temppc=0,stack=0,stackplus=0,stackminus=0;
-	static  String[] S=new String[8];
+	static  String[] S=new String[7];
+	static int clockcheck=0;
+	 String convr=null;
 	static char[] str=new char[16];
 	public Object CPU(int ProgramCounter, int TraceSwitch) {
 		 int ZeroAddress=0;
@@ -15,30 +17,36 @@ public class CPU {
 		 while(true)
 			{
 				System.out.println(SYSTEM.Program_counter);
-		 SYSTEM.InstructionRegister = SYSTEM.mainmemoryarray[SYSTEM.Program_counter];
-		 SYSTEM.Program_counter=SYSTEM.Program_counter+1;
-		System.out.println(srno+")."+SYSTEM.InstructionRegister);
-		 srno++;
+				SYSTEM.InstructionRegister = SYSTEM.mainmemoryarray[SYSTEM.Program_counter];
+				SYSTEM.indexing=SYSTEM.InstructionRegister.charAt(9);
+				SYSTEM.Program_counter=SYSTEM.Program_counter+1;
+				System.out.println(srno+")."+SYSTEM.InstructionRegister);
+				srno++;
 	
 		/*for(int var=0;var<S.length;var++) {
 			System.out.println(S[var]);
 		}*/
 			//System.out.println(SYSTEM.Program_counter);
-		 if(SYSTEM.InstructionRegister.charAt(0) =='0')
-		 {
-			 String Opcode=SYSTEM.InstructionRegister.substring(3,8);
-			// SYSTEM.Program_counter=SYSTEM.Program_counter+1;
-			 while(ZeroAddress<2)
-			 {	 
-			 //System.out.println(Opcode);
-			 switchopcode=Integer.parseInt(Opcode,2); 
-			 
-			//System.out.println(switchopcode);
-			 if(TOS>=0 && TOS<7)
-			 {
-				 if(S[TOS]!=null)
-				 {
-				 stack=Integer.parseInt(S[TOS],2);
+				if(SYSTEM.InstructionRegister.charAt(0) =='0')
+				{
+					String Opcode=SYSTEM.InstructionRegister.substring(3,8);
+					// SYSTEM.Program_counter=SYSTEM.Program_counter+1;
+					while(ZeroAddress<2)
+					{	 
+						//System.out.println(Opcode);
+						switchopcode=Integer.parseInt(Opcode,2);
+						if(clockcheck==1 && switchopcode==0 && ZeroAddress==1)
+						{
+							SYSTEM.clock--;
+						}
+						clockcheck=0;
+						 SYSTEM.clock=SYSTEM.clock+1;
+						//System.out.println(switchopcode);
+						if(TOS>=0 && TOS<6)
+						{
+							if(S[TOS]!=null)
+							{
+								stack=Integer.parseInt(S[TOS],2);
 				 if(S[TOS+1]!=null)
 				 {
 				  stackplus=Integer.parseInt(S[TOS+1],2);
@@ -59,7 +67,6 @@ public class CPU {
 				stackminus=stack|stackminus;	
 				S[TOS-1]=Integer.toBinaryString(stackminus);
 				 TOS=TOS-1;
-				 
 				 break;
 			 case 2:
 				 stackminus=stack&stackminus;
@@ -94,26 +101,61 @@ public class CPU {
 				 TOS=TOS-1;
 				 break;
 			 case 5:
+				 if(S[TOS].length()==16)
+				 {
+					 if(S[TOS].charAt(0)=='1')
+					 {
+						 stack=reverse_complement(S[TOS]);
+					 }
+				 }
 				 stackminus=stack+stackminus;
 				 S[TOS-1]=Integer.toBinaryString(stackminus);
 				 TOS=TOS-1;
 				 break;
 			 case 6:
+				 if(S[TOS].length()==16)
+				 {
+					 if(S[TOS].charAt(0)=='1')
+					 {
+						 stack=reverse_complement(S[TOS]);
+					 }
+				 }
 				 stackminus=stack-stackminus;
 				 S[TOS-1]=Integer.toBinaryString(stackminus);
 				 TOS=TOS-1;
 				 break;
 			 case 7:
+				 if(S[TOS].length()==16)
+				 {
+					 if(S[TOS].charAt(0)=='1')
+					 {
+						 stack=reverse_complement(S[TOS]);
+					 }
+				 }
 				 stackminus=stack*stackminus;
 				 S[TOS-1]=Integer.toBinaryString(stackminus);
 				 TOS=TOS-1;
 				 break;
 			 case 8: 
+				 if(S[TOS].length()==16)
+				 {
+					 if(S[TOS].charAt(0)=='1')
+					 {
+						 stack=reverse_complement(S[TOS]);
+					 }
+				 }
 				 stackminus=stack/stackminus;
 				 S[TOS-1]=Integer.toBinaryString(stackminus);
 				 TOS=TOS-1;
 				 break;
 			 case 9:
+				 if(S[TOS].length()==16)
+				 {
+					 if(S[TOS].charAt(0)=='1')
+					 {
+						 stack=reverse_complement(S[TOS]);
+					 }
+				 }
 				 stackminus=stack%stackminus;
 				 S[TOS-1]=Integer.toBinaryString(stackminus);
 				 TOS=TOS-1;
@@ -129,6 +171,13 @@ public class CPU {
 				 S[TOS]=Integer.toBinaryString(stack);
 				 break;
 			 case 12:
+				 if(S[TOS].length()==16)
+				 {
+					 if(S[TOS].charAt(0)=='1')
+					 {
+						 stack=reverse_complement(S[TOS]);
+					 }
+				 }
 				 if(stackminus > stack)
 				 {
 					 stackplus=1;
@@ -141,6 +190,13 @@ public class CPU {
 				 TOS=TOS+1;
 				 break;
 			 case 13:
+				 if(S[TOS].length()==16)
+				 {
+					 if(S[TOS].charAt(0)=='1')
+					 {
+						 stack=reverse_complement(S[TOS]);
+					 }
+				 }
 				 if(stackminus < stack)
 				 {
 					 stackplus=1;
@@ -154,6 +210,13 @@ public class CPU {
 				 
 				 break;
 			 case 14:
+				 if(S[TOS].length()==16)
+				 {
+					 if(S[TOS].charAt(0)=='1')
+					 {
+						 stack=reverse_complement(S[TOS]);
+					 }
+				 }
 				 if(stackminus == stack)
 				 {
 					 stackplus=1;
@@ -175,24 +238,45 @@ public class CPU {
 				 break;
 			 case 19:
 				 TOS=TOS+1;
-				 S[TOS]=Integer.toBinaryString(SYSTEM.in.nextInt());
+				SYSTEM.clock=SYSTEM.clock+15;
+				 String len32=Integer.toBinaryString(SYSTEM.in.nextInt());
+				 if(len32.charAt(0)=='1' &&  len32.length()==32)
+				 {
+					convr=len32.substring(16, 32);
+					S[TOS]=convr;
+				 }
+				 else
+				 {
+					 S[TOS]=len32;
+				 }
 				 //System.out.println(stack);
 				 break;
 			 case 20:
 				 String result=Integer.toBinaryString(stack);
+				 if(result.length()>16)
+				 {
+					 int response=result.length();
+					 result=result.substring(response-16,response);
+				 }
+				 if(result.length()<16)
+				 {
+					 result=padzeros(result);
+				 }
 				 System.out.println(result+"hello world"+TOS);
-				 
+				 SYSTEM.clock=SYSTEM.clock+15;
 				 TOS=TOS-1;
 				 break;
 			 case 21:
 				 SYSTEM.Program_counter=stack;
 				 TOS=TOS-1;
+				 clockcheck=1;
 				 break;
 			 case 22:
 				 break;
 			 case 23:
 				 break;
 			 case 24:
+				 System.out.println(SYSTEM.clock);
 				 System.out.println("Halt");
 				 System.exit(0);
 				 break;
@@ -202,6 +286,7 @@ public class CPU {
 			}
 			 ZeroAddress++;
 			 System.out.println(Opcode);
+			 
 			 Opcode=SYSTEM.InstructionRegister.substring(11,16);
 			 //System.out.println(Opcode);
 			 }
@@ -214,13 +299,13 @@ public class CPU {
 				// System.out.println(SYSTEM.Program_counter);
 			 }	*/
 			 ZeroAddress=0;
+			
 			 System.out.println(TOS);
 			 //SYSTEM.Program_counter=SYSTEM.Program_counter+1;
 		 }	 
 		 if(SYSTEM.InstructionRegister.charAt(0) =='1' && SYSTEM.InstructionRegister.length()==16)
 		 {
 			 //SYSTEM.Program_counter=SYSTEM.Program_counter+1;
-			 
 			 String Opcodeone=SYSTEM.InstructionRegister.substring(1,6);
 			 //SYSTEM.Program_counter=SYSTEM.Program_counter+1;
 			// System.out.println(Opcodeone);
@@ -232,13 +317,14 @@ public class CPU {
 			 //System.out.println(DecimalEA);
 			 String Z=SYSTEM.BufferRegister;
 			 String memor=MEMORY.MEMORY(0,DecimalEA,Z);
+			 SYSTEM.clock=SYSTEM.clock+4;
 			 //System.out.println(memor);
 			 Z=memor;
 			 int ee=Integer.parseInt(Z,2);
 			 //String ValueAtmemory=SYSTEM.MEMORY(X,Y,Z);
 			// int ee=Integer.parseInt(SYSTEM.mainmemoryarray[switchopcodezeroEA],2);
 			 //System.out.println(switchopcodezero);
-			 if(TOS>=0 && TOS<7)
+			 if(TOS>=0 && TOS<6)
 			 {
 				 if(S[TOS]!=null)
 				 {
@@ -262,7 +348,6 @@ public class CPU {
 					 }
 				 }
 				 //System.out.println(stack);
-				
 				// System.out.println(stackplus);
 				 if(switchopcodezero<32000)
 			 switch(switchopcodezero)
@@ -285,22 +370,57 @@ public class CPU {
 				 S[TOS]=Integer.toBinaryString(stack);
 				 break;
 			 case 5:
+				 if(S[TOS].length()==16)
+				 {
+					 if(S[TOS].charAt(0)=='1')
+					 {
+						 stack=reverse_complement(S[TOS]);
+					 }
+				 }
 				 stack=stack+ee;
 				 S[TOS]=Integer.toBinaryString(stack);
 				 break;
 			 case 6:
+				 if(S[TOS].length()==16)
+				 {
+					 if(S[TOS].charAt(0)=='1')
+					 {
+						 stack=reverse_complement(S[TOS]);
+					 }
+				 }
 				 stack=stack-ee;
 				 S[TOS]=Integer.toBinaryString(stack);
 				 break;
 			 case 7:
+				 if(S[TOS].length()==16)
+				 {
+					 if(S[TOS].charAt(0)=='1')
+					 {
+						 stack=reverse_complement(S[TOS]);
+					 }
+				 }
 				 stack=stack*ee;
 				 S[TOS]=Integer.toBinaryString(stack);
 				 break;
 			 case 8: 
+				 if(S[TOS].length()==16)
+				 {
+					 if(S[TOS].charAt(0)=='1')
+					 {
+						 stack=reverse_complement(S[TOS]);
+					 }
+				 }
 				 stack=stack/ee;
 				 S[TOS]=Integer.toBinaryString(stack);
 				 break;
 			 case 9:
+				 if(S[TOS].length()==16)
+				 {
+					 if(S[TOS].charAt(0)=='1')
+					 {
+						 stack=reverse_complement(S[TOS]);
+					 }
+				 }
 				 stack=stack%ee;
 				 S[TOS]=Integer.toBinaryString(stack);
 				 break;
@@ -311,11 +431,16 @@ public class CPU {
 			 case 12:
 				// for(String print:S)
 				// System.out.println(print);
-				
+				 if(S[TOS].length()==16)
+				 {
+					 if(S[TOS].charAt(0)=='1' && S[TOS]!=null)
+					 {
+						 stack=reverse_complement(S[TOS]);
+					 }
+				 }
 				 if(stack > ee)
 				 {
 					 stackplus=1;
-					 
 				 }
 				 else
 				 {
@@ -324,12 +449,18 @@ public class CPU {
 				 S[TOS+1]=Integer.toBinaryString(stackplus);
 				 //System.out.println(stack); 
 				 //System.out.println(ee);
-				 
 				 TOS=TOS+1;
 				 //stack=stackplus;
 				 //System.out.println(stack);
 				 break;
 			 case 13:
+				 if(S[TOS].length()==16)
+				 {
+					 if(S[TOS].charAt(0)=='1')
+					 {
+						 stack=reverse_complement(S[TOS]);
+					 }
+				 }
 				 if(stack < ee)
 				 {
 					 stackplus=1;
@@ -344,6 +475,13 @@ public class CPU {
 				 System.out.println(S[TOS]);
 				 break;
 			 case 14:
+				 if(S[TOS].length()==16)
+				 {
+					 if(S[TOS].charAt(0)=='1')
+					 {
+						 stack=reverse_complement(S[TOS]);
+					 }
+				 }
 				 if(stack == ee)
 				 {
 					 stackplus=1;
@@ -380,7 +518,6 @@ public class CPU {
 				 }
 				 S[TOS]=null;
 				 TOS=TOS-1;
-				
 				 break;
 			 case 18:
 				TOS=TOS+1;
@@ -404,7 +541,6 @@ public class CPU {
 				 TOS=TOS+1;
 				 stack=ee;
 				 S[TOS]=Integer.toBinaryString(stack);
-				 
 				 System.out.println(stack);
 				 break;
 			 case 23:
@@ -420,6 +556,7 @@ public class CPU {
 				 break;
 			 }
 			 }
+			
 			 System.out.println(TOS);
 			 /*if((switchopcodezero < 0) && (switchopcodezero >= 24) ) {
 				
@@ -432,6 +569,43 @@ public class CPU {
 		 }
 		}
 		
+	}
+	private int reverse_complement(String string) {
+		// TODO Auto-generated method stub
+		 char[] str1=new char[16];
+		 System.out.println(string);
+		 /*long reverse=Integer.parseInt(string);
+		 reverse=reverse-1;
+		 string=Long.toBinaryString(reverse);
+		 if(string.length()!=16)
+		 {
+			 string=padzeros(string);
+		 }*/
+		 if(string.length()==16)
+		 {
+		 for(int len=0;len<string.length();len++)
+		 {
+			 if(string.charAt(len)=='0')
+			 {
+				str1[len]='1';
+			 }
+			 else
+			 {
+				 str1[len]='0';
+			 }		 
+		 }
+		 }
+		 String conver=String.valueOf(str1);
+		 System.out.println(conver);
+		 int stack=1+Integer.parseInt(conver);
+		 stack=0-stack;
+		return stack;
+	}
+	private String padzeros(String string) {
+		// TODO Auto-generated method stub
+		 String form="%16s";
+		String splitstring = String.format(form, string).replace(" ", "0");
+		return splitstring;
 	}
 	
 }

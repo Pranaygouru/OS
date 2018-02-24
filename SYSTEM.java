@@ -10,8 +10,11 @@ public class SYSTEM {
 	static String line;
 	static BufferedReader reader;
 	static int Program_counter;
+	static int clock=0;
+	static int indexing=0;
 	static String InstructionRegister;
 	static String BaseRegister;
+	static int BaseRg=0;
     static String[] mainmemoryarray=new String[256];
     static Scanner in = new Scanner(System.in);
     static String BufferRegister;
@@ -31,17 +34,17 @@ public static void main(String[] args) throws IOException {
 	/*for(String var:array)
 		System.out.println(var);*/
 	String X=array[1];
-	String Y="1";
+	String Y=array[4];
+	
 	String Z=null;
-	Program_counter=Integer.parseInt(array[2],16);
-
+	Program_counter=Integer.parseInt(X+array[2],16);
 	lr.Loader(X,Y);
 	int x;
 	x = Program_counter;
 	int y=Integer.parseInt(Y);
 	//X=array[2];
 	cp.CPU(x,y);
-	
+	//System.out.println(clock);
 	reader.close();
 }
 public static void exit() {

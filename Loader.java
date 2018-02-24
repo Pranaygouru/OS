@@ -11,6 +11,8 @@ public class Loader {
 		 FileReader fr=new FileReader("Job1.txt");
 			 reader=new BufferedReader(fr);
 			 line=reader.readLine();	
+			 x=hextobinary(x);
+			SYSTEM.BaseRg=Integer.parseInt(x);
 			 int mainindex=0;
 			 while((line = reader.readLine()) != null)
 			 {
@@ -26,7 +28,7 @@ public class Loader {
 				 for(int splitline=0;splitline<splitstring.length();) {
 				 String splitword=splitstring.substring(splitline,splitline+16);
 				 splitline=splitline+16;
-				 SYSTEM.mainmemoryarray[mainindex]=splitword;
+				 SYSTEM.mainmemoryarray[SYSTEM.BaseRg+mainindex]=splitword;
 				 //System.out.println( SYSTEM.mainmemoryarray[mainindex]);
 				 mainindex++;
 				 }
@@ -34,5 +36,13 @@ public class Loader {
 			 }
 			 //System.out.println(mainindex);
 		}
-
+	private String hextobinary(String x) {
+		// TODO Auto-generated method stub
+		
+		String preBin = new BigInteger(x, 16).toString(2);
+		int num = x.length();
+		String form="%16s";
+		String splitstring = String.format(form, preBin).replace(" ", "0");
+		return splitstring;
+	}
 	}
