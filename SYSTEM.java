@@ -35,7 +35,7 @@ public static void main(String[] args) throws IOException {
 		System.out.println(var);*/
 	String X=array[1];
 	String Y=array[4];
-	
+	SYSTEM.BaseRegister=array[1];
 	String Z=null;
 	Program_counter=Integer.parseInt(X+array[2],16);
 	lr.Loader(X,Y);

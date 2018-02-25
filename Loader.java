@@ -37,8 +37,6 @@ public class Loader {
 			 //System.out.println(mainindex);
 		}
 	private String hextobinary(String x) {
-		// TODO Auto-generated method stub
-		
 		String preBin = new BigInteger(x, 16).toString(2);
 		int num = x.length();
 		String form="%16s";
