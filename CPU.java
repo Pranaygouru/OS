@@ -1,7 +1,10 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.PrintWriter;
 import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Stack;
 public class CPU {
 	static int TOS = 0;
@@ -13,45 +16,57 @@ public class CPU {
 	static int clockcheck = 0;
 	String convr = null;
 	String memor, EA;
+	static String BR;
+	static String IR;
 	static char[] str = new char[16];
 
-	public Object CPU(int ProgramCounter, int TraceSwitch) throws FileNotFoundException {
+	public Object CPU(int PC, int TraceSwitch) throws FileNotFoundException {
 		int ZeroAddress = 0;
-		// System.out.println(SYSTEM.mainmemoryarray[63]);
+
 		PrintWriter writer = new PrintWriter(System.out);
-		writer = new PrintWriter(new File("Trace Flag Output"));
-		writer.println(
-				"(PC)		(BR)			(IR)			  (TOS),S[TOS] Before Execution  	     	EA,(EA) Before Execution				TOS,S[TOS] After Execution				EA,(EA) After Execution");
+		writer = new PrintWriter(new FileOutputStream("Trace Flag Output",false));
+		writer.println("\t(PC)\t (BR)\t  (IR)\t     (TOS)\tS[TOS]\t EA\t(EA) \t\tTOS\t S[TOS]   EA\t (EA)");
+		writer.println("\t\t\t\t\tBeforeExecution\t BeforeExecution\tAfterExecution\tBeforeExecution");
 
 		while (true) {
-			System.out.println(SYSTEM.Program_counter);
-			SYSTEM.InstructionRegister = SYSTEM.mainmemoryarray[SYSTEM.Program_counter];
+
+			IR = MEMORY.MEMORY(0,PC,"");
+			ArrayList al = new ArrayList();
 			if (TraceSwitch == 1 && TOS>=0) {
-				writer.print(SYSTEM.Program_counter + "                 " + SYSTEM.BaseRegister + "                 "
-						+ SYSTEM.InstructionRegister + "                 " + TOS + ", " + S[TOS] + "            	                   ");
-			}
-			//SYSTEM.indexing = SYSTEM.InstructionRegister.charAt(9);
-			SYSTEM.Program_counter = SYSTEM.Program_counter + 1;
-			System.out.println(srno + ")." + SYSTEM.InstructionRegister);
-			srno++;
+				//writer.print(PC + "                 " + SYSTEM.BaseRegister + "                 "
+				//	+ IR + "                 " + TOS + ", " + S[TOS] + "            	                   ");
 			
-			/*
-			 * for(int var=0;var<S.length;var++) { System.out.println(S[var]); }
-			 */
-			// System.out.println(SYSTEM.Program_counter);
-			if (SYSTEM.InstructionRegister.charAt(0) == '0') {
-				String Opcode = SYSTEM.InstructionRegister.substring(3, 8);
-				// SYSTEM.Program_counter=SYSTEM.Program_counter+1;
+			
+			PC = PC + 1;
+			al.add(inttohex(PC));
+			BR=SYSTEM.array[1];
+			al.add(BR);
+			al.add(binarytohex(IR));
+			al.add(inttohex(TOS));
+			if(S[TOS]!=null)
+			{
+				String sts=S[TOS];
+				al.add(binarytohex(sts));
+			}
+			else
+			{
+				al.add("0");
+			}
+			}
+			srno++;
+			if (IR.charAt(0) == '0') {
+				String Opcode = IR.substring(3, 8);
+				// PC=PC+1;
 				TraceSwitchone=0;
 				while (ZeroAddress < 2) {
-					 System.out.println("OPCODE"+Opcode);
+
 					switchopcode = Integer.parseInt(Opcode, 2);
 					if (clockcheck == 1 && switchopcode == 0 && ZeroAddress == 1) {
 						SYSTEM.clock--;
 					}
 					clockcheck = 0;
 					SYSTEM.clock = SYSTEM.clock + 1;
-					// System.out.println(switchopcode);
+
 					if (TOS >= 0 && TOS < 6) {
 						if (S[TOS] != null) {
 							stack = Integer.parseInt(S[TOS], 2);
@@ -63,7 +78,7 @@ public class CPU {
 							}
 						}
 
-						// System.out.println(switchopcode);
+
 						if (switchopcode < 32000)
 							switch (switchopcode) {
 							case 0:
@@ -92,7 +107,7 @@ public class CPU {
 									}
 								}
 								String conver = String.valueOf(str);
-								System.out.println(conver);
+
 								S[TOS] = conver;
 								break;
 							case 4:
@@ -151,10 +166,10 @@ public class CPU {
 								TOS = TOS - 1;
 								break;
 							case 10:
-								System.out.println(stack);
+
 								stack = stack << 1;
 								S[TOS] = Integer.toBinaryString(stack);
-								System.out.println(stack);
+
 								break;
 							case 11:
 								stack = stack >> 1;
@@ -221,7 +236,7 @@ public class CPU {
 								} else {
 									S[TOS] = len32;
 								}
-								// System.out.println(stack);
+
 								break;
 							case 20:
 								String result = Integer.toBinaryString(stack);
@@ -232,12 +247,11 @@ public class CPU {
 								if (result.length() < 16) {
 									result = padzeros(result);
 								}
-								System.out.println(result);
 								SYSTEM.clock = SYSTEM.clock + 15;
 								TOS = TOS - 1;
 								break;
 							case 21:
-								SYSTEM.Program_counter = stack;
+								PC = stack;
 								TOS = TOS - 1;
 								clockcheck = 1;
 								break;
@@ -246,8 +260,6 @@ public class CPU {
 							case 23:
 								break;
 							case 24:
-								System.out.println(SYSTEM.clock);
-								System.out.println("Halt");
 								writer.close();
 								System.exit(0);
 								break;
@@ -256,53 +268,56 @@ public class CPU {
 							}
 					}
 					ZeroAddress++;
-					System.out.println(Opcode);
-
-					Opcode = SYSTEM.InstructionRegister.substring(11, 16);
-					// System.out.println(Opcode);
+					Opcode = IR.substring(11, 16);	
 				}
-				/*
-				 * if((switchopcode >= 0) && (switchopcode <= 24)) {
-				 * 
-				 * temppc=SYSTEM.Program_counter; temppc=temppc+1; //
-				 * System.out.println(temppc); SYSTEM.Program_counter=temppc; //
-				 * System.out.println(SYSTEM.Program_counter); }
-				 */
 				ZeroAddress = 0;
 				if(TraceSwitch==1 && TOS>=0)
 				{
-					writer.print("                                                        "+TOS + "," + S[TOS] );
-					writer.println();
 					
-				}
-				System.out.println(TOS);
-				// SYSTEM.Program_counter=SYSTEM.Program_counter+1;
-			}
-			if (SYSTEM.InstructionRegister.charAt(0) == '1' && SYSTEM.InstructionRegister.length() == 16) {
-				// SYSTEM.Program_counter=SYSTEM.Program_counter+1;
-				String Opcodeone = SYSTEM.InstructionRegister.substring(1, 6);
-				// SYSTEM.Program_counter=SYSTEM.Program_counter+1;
-				// System.out.println(Opcodeone);
-				EA = SYSTEM.InstructionRegister.substring(9, 16);
+					al.add("--");
+					al.add("--");
+					al.add(inttohex(TOS));
+					al.add(binarytohex(S[TOS]));
+					al.add("--");
+					al.add("--");
+				
 
-				// System.out.println(EA);
+				}
+			}
+			if (IR.charAt(0) == '1' && IR.length() == 16) {
+				String Opcodeone = IR.substring(1, 6);
+				EA = IR.substring(9, 16);
+				BR = SYSTEM.array[1];
+
+				BR = hextobinary(BR);
+				int baseadd=Integer.parseInt(BR);
 				switchopcodezero = Integer.parseInt(Opcodeone, 2);
-				System.out.println("OPCODE"+switchopcodezero);
+
 				int DecimalEA = Integer.parseInt(EA, 2);
-				// System.out.println(DecimalEA);
+
+
+				if(IR.charAt(6)=='1' && S[TOS]!=null && S[TOS]=="10%")
+				{
+					int stackadd=Integer.parseInt(S[TOS]);
+					DecimalEA=DecimalEA+baseadd+stackadd;
+				}
+				else
+				{
+					DecimalEA=DecimalEA+baseadd;
+				}
+
 				String Z = SYSTEM.BufferRegister;
 				memor = MEMORY.MEMORY(0, DecimalEA, Z);
 				TraceSwitchone=1;
 				if (TraceSwitch == 1 && TraceSwitchone==1) {
-					writer.print(EA + ", " + memor + "                                           ");
+					//writer.print(EA + ", " + memor + "                                           ");
+					al.add(binarytohex(EA));
+					al.add(binarytohex(memor));
 				}
 				SYSTEM.clock = SYSTEM.clock + 4;
-				// System.out.println(memor);
+
 				Z = memor;
 				int ee = Integer.parseInt(Z, 2);
-				// String ValueAtmemory=SYSTEM.MEMORY(X,Y,Z);
-				// int ee=Integer.parseInt(SYSTEM.mainmemoryarray[switchopcodezeroEA],2);
-				// System.out.println(switchopcodezero);
 				if (TOS >= 0 && TOS < 6) {
 					if (S[TOS] != null) {
 						stack = Integer.parseInt(S[TOS], 2);
@@ -320,8 +335,6 @@ public class CPU {
 							stackminus = Integer.parseInt(S[TOS - 1], 2);
 						}
 					}
-					// System.out.println(stack);
-					// System.out.println(stackplus);
 					if (switchopcodezero < 32000)
 						switch (switchopcodezero) {
 						case 0:
@@ -333,7 +346,6 @@ public class CPU {
 						case 2:
 							stack = stack & ee;
 							S[TOS] = Integer.toBinaryString(stack);
-							System.out.println(S[TOS]);
 							break;
 						case 3:
 							break;
@@ -391,8 +403,6 @@ public class CPU {
 						case 11:
 							break;
 						case 12:
-							// for(String print:S)
-							// System.out.println(print);
 							if (S[TOS].length() == 16) {
 								if (S[TOS].charAt(0) == '1' && S[TOS] != null) {
 									stack = reverse_complement(S[TOS]);
@@ -404,11 +414,7 @@ public class CPU {
 								stackplus = 0;
 							}
 							S[TOS + 1] = Integer.toBinaryString(stackplus);
-							// System.out.println(stack);
-							// System.out.println(ee);
 							TOS = TOS + 1;
-							// stack=stackplus;
-							// System.out.println(stack);
 							break;
 						case 13:
 							if (S[TOS].length() == 16) {
@@ -424,7 +430,6 @@ public class CPU {
 
 							S[TOS + 1] = Integer.toBinaryString(stackplus);
 							TOS = TOS + 1;
-							System.out.println(S[TOS]);
 							break;
 						case 14:
 							if (S[TOS].length() == 16) {
@@ -433,49 +438,42 @@ public class CPU {
 								}
 							}
 							if (stack == ee) {
-								stackplus = 0;
-							} else {
 								stackplus = 1;
+							} else {
+								stackplus = 0;
 							}
 							S[TOS + 1] = Integer.toBinaryString(stackplus);
 							TOS = TOS + 1;
 							break;
 						case 15:
-							SYSTEM.Program_counter = Integer.parseInt(EA, 2);
-							// SYSTEM.Program_counter=SYSTEM.Program_counter-1;
-							// System.out.println(SYSTEM.Program_counter);
+							PC = Integer.parseInt(EA, 2);
+							PC = PC+baseadd;
 							break;
 						case 16:
-							// System.out.println(stack);
 							if (stack == 1) {
-								// System.out.println(EA);
-								SYSTEM.Program_counter = Integer.parseInt(EA, 2);
-								// SYSTEM.Program_counter=SYSTEM.Program_counter-1;
+								PC = Integer.parseInt(EA, 2);	
+								PC = PC+baseadd;
 							}
-							S[TOS] = null;
-							// System.out.println(stack);
+							S[TOS] = "0000000000000000";
 							TOS = TOS - 1;
 							break;
 						case 17:
-							// System.out.println(stack);
 							if (stack == 0) {
-								SYSTEM.Program_counter = Integer.parseInt(EA, 2);
+								PC = Integer.parseInt(EA, 2);
+								PC = PC+baseadd;
 							}
-							S[TOS] = null;
+							S[TOS] = "0000000000000000";
 							TOS = TOS - 1;
 							break;
 						case 18:
 							TOS = TOS + 1;
-							// int program_decimal=Integer.parseInt(SYSTEM.Program_counter,2);
-							String pcc = Integer.toBinaryString(SYSTEM.Program_counter);
+							String pcc = Integer.toBinaryString(PC);
 							String form = "%16s";
 							String splitstring = String.format(form, pcc).replace(" ", "0");
 							S[TOS] = splitstring;
-							SYSTEM.Program_counter = Integer.parseInt(EA, 2);
+							PC = Integer.parseInt(EA, 2);
+							PC = PC+baseadd;
 							break;
-						// System.out.println(SYSTEM.Program_counter);
-						// SYSTEM.Program_counter--;
-						// CPU(SYSTEM.Program_counter,1);
 						case 19:
 							break;
 						case 20:
@@ -486,7 +484,6 @@ public class CPU {
 							TOS = TOS + 1;
 							stack = ee;
 							S[TOS] = Integer.toBinaryString(stack);
-							System.out.println(stack);
 							break;
 						case 23:
 							EA = Integer.toBinaryString(stack);
@@ -494,41 +491,65 @@ public class CPU {
 							MEMORY.MEMORY(1, DecimalEA, EA);
 							break;
 						case 24:
-							System.out.println("Halt");
 							System.exit(0);
 							break;
 						default:
 							break;
 						}
 				}
-
-				System.out.println(TOS);
-				/*
-				 * if((switchopcodezero < 0) && (switchopcodezero >= 24) ) {
-				 * 
-				 * SYSTEM.exit(); } else { SYSTEM.Program_counter=SYSTEM.Program_counter+1; }
-				 */
-
 				if (TraceSwitch == 1 && TraceSwitchone==1 && TOS>=0) {
-					writer.print(TOS + "," + S[TOS] + "                                          " + EA + "," + memor);
-					writer.println();
+					//writer.print(TOS + "," + S[TOS] + "                                          " + EA + "," + memor);
+					al.add(inttohex(TOS));
+					al.add(binarytohex(S[TOS]));
+					al.add(binarytohex(EA));
+					al.add(binarytohex(memor));
+					//writer.println();
 					TraceSwitchone=0;
 				}
 			}
-			
-		
+
+			Iterator<String> itr = al.iterator();
+			while (itr.hasNext()) {
+				String element = itr.next();
+				writer.print(String.format("%10s",element));
+			}
+			writer.println();
 		}
 	}
 
+	private Object binarytohex(String iR2) {
+		String hex="0";
+		if(iR2!=null)
+		{
+			int num=iR2.length();
+			if(iR2.length()>16)
+			{
+				hex=iR2.substring(num-16, num);
+				hex=Integer.toHexString(Integer.parseInt(iR2, 2)).toUpperCase();
+			}
+			else
+			{
+				hex=Integer.toHexString(Integer.parseInt(iR2, 2)).toUpperCase();
+			}
+		}
+		return hex;
+	}
+
+	private Object inttohex(int pC) {
+		String hex=Integer.toHexString(pC);
+		return hex;
+	}
+
+	private String hextobinary(String bR2) {
+		String preBin = new BigInteger(bR2, 16).toString(2);
+		String form="%16s";
+		String splitstring = String.format(form, preBin).replace(" ", "0");
+		return splitstring;
+
+	}
+
 	private int reverse_complement(String string) {
-		// TODO Auto-generated method stub
 		char[] str1 = new char[16];
-		System.out.println(string);
-		/*
-		 * long reverse=Integer.parseInt(string); reverse=reverse-1;
-		 * string=Long.toBinaryString(reverse); if(string.length()!=16) {
-		 * string=padzeros(string); }
-		 */
 		if (string.length() == 16) {
 			for (int len = 0; len < string.length(); len++) {
 				if (string.charAt(len) == '0') {
@@ -539,10 +560,8 @@ public class CPU {
 			}
 		}
 		String conver = String.valueOf(str1);
-		System.out.println(conver);
 		int stack = 1 + Integer.parseInt(conver);
 		stack = 0 - stack;
-
 		return stack;
 	}
 
@@ -552,5 +571,5 @@ public class CPU {
 		String splitstring = String.format(form, string).replace(" ", "0");
 		return splitstring;
 	}
-	
+
 }

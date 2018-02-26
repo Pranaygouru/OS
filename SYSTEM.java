@@ -18,6 +18,7 @@ public class SYSTEM {
     static String[] mainmemoryarray=new String[256];
     static Scanner in = new Scanner(System.in);
     static String BufferRegister;
+    static String[] array=new String[5];
 public static void main(String[] args) throws IOException {
 	//java.net.URL path = SYSTEM.class.getResource("Job1.txt");
 	//File f = new File(path.getFile());
@@ -30,17 +31,20 @@ public static void main(String[] args) throws IOException {
 	{
 	    System.out.println(line);
 	}
-	String[] array=line.split(" ");
+   array=line.split(" ");
 	/*for(String var:array)
 		System.out.println(var);*/
 	String X=array[1];
 	String Y=array[4];
 	SYSTEM.BaseRegister=array[1];
 	String Z=null;
-	Program_counter=Integer.parseInt(X+array[2],16);
+	//Program_counter=Integer.parseInt(X+array[2],16);
+	int baseload=Integer.parseInt(array[1],16);
+	int plusbr=Integer.parseInt(array[2],16);
+	
 	lr.Loader(X,Y);
 	int x;
-	x = Program_counter;
+	x = baseload+plusbr;
 	int y=Integer.parseInt(Y);
 	//X=array[2];
 	cp.CPU(x,y);

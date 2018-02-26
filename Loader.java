@@ -12,11 +12,10 @@ public class Loader {
 			 reader=new BufferedReader(fr);
 			 line=reader.readLine();	
 			 x=hextobinary(x);
-			SYSTEM.BaseRg=Integer.parseInt(x);
+			int load=Integer.parseInt(x);
 			 int mainindex=0;
 			 while((line = reader.readLine()) != null)
-			 {
-		    //System.out.println(line);  
+			 { 
 				int i=0;		
 				String preBin = new BigInteger(line, 16).toString(2);
 				int num = line.length();
@@ -28,9 +27,11 @@ public class Loader {
 				 for(int splitline=0;splitline<splitstring.length();) {
 				 String splitword=splitstring.substring(splitline,splitline+16);
 				 splitline=splitline+16;
-				 SYSTEM.mainmemoryarray[SYSTEM.BaseRg+mainindex]=splitword;
+				 //SYSTEM.mainmemoryarray[load]=splitword;
+				 MEMORY.MEMORY(1, load, splitword);
+				 //System.out.println(load);
 				 //System.out.println( SYSTEM.mainmemoryarray[mainindex]);
-				 mainindex++;
+				 load++;
 				 }
 				 //System.out.print(tempArr.length);	 
 			 }
