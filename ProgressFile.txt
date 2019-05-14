@@ -1,0 +1,2793 @@
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 1
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 1
+4) Number of jobs terminated abnormally: 0
+5) statistics and partition dumps for normal terminations: a) System Clock: 0
+
+
+
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 1
+4) Number of jobs terminated abnormally: 0
+5) statistics and partition dumps for normal terminations: a) System Clock: 42
+                                                           b) Execution time42
+
+6) External Fragmentation in FRACTION : 256/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: []
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 0
+9) Memory Allocation [[0, 19]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 2
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 2
+4) Number of jobs terminated abnormally: 0
+5) statistics and partition dumps for normal terminations: a) System Clock: 42
+
+
+
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 2
+4) Number of jobs terminated abnormally: 0
+5) statistics and partition dumps for normal terminations: a) System Clock: 49
+                                                           b) Execution time7
+
+6) External Fragmentation in FRACTION : 258/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: []
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 0
+9) Memory Allocation [[0, 19]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 3
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 3
+4) Number of jobs terminated abnormally: 0
+5) statistics and partition dumps for normal terminations: a) System Clock: 49
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 4
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 4
+4) Number of jobs terminated abnormally: 1
+5) statistics and partition dumps for normal terminations: a) System Clock: 54
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 5
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 5
+4) Number of jobs terminated abnormally: 1
+5) statistics and partition dumps for normal terminations: a) System Clock: 54
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 6
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 6
+4) Number of jobs terminated abnormally: 1
+5) statistics and partition dumps for normal terminations: a) System Clock: 54
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 7
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 7
+4) Number of jobs terminated abnormally: 1
+5) statistics and partition dumps for normal terminations: a) System Clock: 54
+
+
+
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 4
+3) id or # of user job currently executing in DECIMAL 5
+4) Number of jobs terminated abnormally: 1
+5) statistics and partition dumps for normal terminations: a) System Clock: 120
+                                                           b) Execution time6
+
+6) External Fragmentation in FRACTION : 18/256
+7) Queue List for various queues: a) High Priority: [4]
+                                  b) Low Priority: [6, 7]
+                                  c) Blocked Queue: [5]
+8) Degree of multiprogramming: 4
+9) Memory Allocation [[20, 33]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 4
+3) id or # of user job currently executing in DECIMAL 5
+4) Number of jobs terminated abnormally: 1
+5) statistics and partition dumps for normal terminations: a) System Clock: 151
+                                                           b) Execution time7
+
+6) External Fragmentation in FRACTION : 32/256
+7) Queue List for various queues: a) High Priority: [4]
+                                  b) Low Priority: [6, 7]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 4
+9) Memory Allocation [[20, 33]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 4
+4) Number of jobs terminated abnormally: 1
+5) statistics and partition dumps for normal terminations: a) System Clock: 271
+                                                           b) Execution time210
+
+6) External Fragmentation in FRACTION : 32/256
+7) Queue List for various queues: a) High Priority: [4]
+                                  b) Low Priority: [6, 7]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 3
+9) Memory Allocation [[0, 19]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 4
+4) Number of jobs terminated abnormally: 1
+5) statistics and partition dumps for normal terminations: a) System Clock: 391
+                                                           b) Execution time330
+
+6) External Fragmentation in FRACTION : 32/256
+7) Queue List for various queues: a) High Priority: [4]
+                                  b) Low Priority: [6, 7]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 3
+9) Memory Allocation [[0, 19]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 4
+4) Number of jobs terminated abnormally: 1
+5) statistics and partition dumps for normal terminations: a) System Clock: 511
+                                                           b) Execution time450
+
+6) External Fragmentation in FRACTION : 32/256
+7) Queue List for various queues: a) High Priority: [4]
+                                  b) Low Priority: [6, 7]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 3
+9) Memory Allocation [[0, 19]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 2
+3) id or # of user job currently executing in DECIMAL 6
+4) Number of jobs terminated abnormally: 1
+5) statistics and partition dumps for normal terminations: a) System Clock: 612
+                                                           b) Execution time7
+
+6) External Fragmentation in FRACTION : 32/256
+7) Queue List for various queues: a) High Priority: [4]
+                                  b) Low Priority: []
+                                  c) Blocked Queue: [7, 6]
+8) Degree of multiprogramming: 2
+9) Memory Allocation [[34, 207]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 4
+4) Number of jobs terminated abnormally: 1
+5) statistics and partition dumps for normal terminations: a) System Clock: 765
+                                                           b) Execution time690
+
+6) External Fragmentation in FRACTION : 32/256
+7) Queue List for various queues: a) High Priority: [4]
+                                  b) Low Priority: [6, 7]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 3
+9) Memory Allocation [[0, 19]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 4
+4) Number of jobs terminated abnormally: 1
+5) statistics and partition dumps for normal terminations: a) System Clock: 885
+                                                           b) Execution time810
+
+6) External Fragmentation in FRACTION : 32/256
+7) Queue List for various queues: a) High Priority: [4]
+                                  b) Low Priority: [6, 7]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 3
+9) Memory Allocation [[0, 19]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 2
+3) id or # of user job currently executing in DECIMAL 6
+4) Number of jobs terminated abnormally: 1
+5) statistics and partition dumps for normal terminations: a) System Clock: 982
+                                                           b) Execution time11
+
+6) External Fragmentation in FRACTION : 32/256
+7) Queue List for various queues: a) High Priority: [4]
+                                  b) Low Priority: []
+                                  c) Blocked Queue: [7, 6]
+8) Degree of multiprogramming: 2
+9) Memory Allocation [[34, 207]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 7
+4) Number of jobs terminated abnormally: 2
+5) statistics and partition dumps for normal terminations: a) System Clock: 1096
+                                                           b) Execution time22
+
+6) External Fragmentation in FRACTION : 42/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: []
+                                  c) Blocked Queue: [7]
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[208, 247]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 7
+4) Number of jobs terminated abnormally: 2
+5) statistics and partition dumps for normal terminations: a) System Clock: 1112
+                                                           b) Execution time38
+
+6) External Fragmentation in FRACTION : 82/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: []
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 0
+9) Memory Allocation [[208, 247]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 8
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 8
+4) Number of jobs terminated abnormally: 2
+5) statistics and partition dumps for normal terminations: a) System Clock: 1112
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 9
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 9
+4) Number of jobs terminated abnormally: 3
+5) statistics and partition dumps for normal terminations: a) System Clock: 1125
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 10
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 10
+4) Number of jobs terminated abnormally: 3
+5) statistics and partition dumps for normal terminations: a) System Clock: 1125
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 11
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 11
+4) Number of jobs terminated abnormally: 3
+5) statistics and partition dumps for normal terminations: a) System Clock: 1125
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 12
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 12
+4) Number of jobs terminated abnormally: 3
+5) statistics and partition dumps for normal terminations: a) System Clock: 1125
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 13
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 13
+4) Number of jobs terminated abnormally: 3
+5) statistics and partition dumps for normal terminations: a) System Clock: 1125
+
+
+
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 13
+4) Number of jobs terminated abnormally: 4
+5) statistics and partition dumps for normal terminations: a) System Clock: 1176
+                                                           b) Execution time30
+
+6) External Fragmentation in FRACTION : 144/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: []
+                                  c) Blocked Queue: [10, 11, 12]
+8) Degree of multiprogramming: 0
+9) Memory Allocation [[136, 171]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 15
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 15
+4) Number of jobs terminated abnormally: 5
+5) statistics and partition dumps for normal terminations: a) System Clock: 1176
+
+
+
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 2
+3) id or # of user job currently executing in DECIMAL 10
+4) Number of jobs terminated abnormally: 5
+5) statistics and partition dumps for normal terminations: a) System Clock: 1236
+                                                           b) Execution time35
+
+6) External Fragmentation in FRACTION : 40/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [10, 15]
+                                  c) Blocked Queue: [11, 12]
+8) Degree of multiprogramming: 2
+9) Memory Allocation [[24, 49]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 10
+4) Number of jobs terminated abnormally: 6
+5) statistics and partition dumps for normal terminations: a) System Clock: 1256
+                                                           b) Execution time37
+
+6) External Fragmentation in FRACTION : 102/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: []
+                                  c) Blocked Queue: [11]
+8) Degree of multiprogramming: 0
+9) Memory Allocation [[24, 49]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 17
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 17
+4) Number of jobs terminated abnormally: 7
+5) statistics and partition dumps for normal terminations: a) System Clock: 1256
+
+
+
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 17
+4) Number of jobs terminated abnormally: 8
+5) statistics and partition dumps for normal terminations: a) System Clock: 1328
+                                                           b) Execution time33
+
+6) External Fragmentation in FRACTION : 66/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: []
+                                  c) Blocked Queue: [17]
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[180, 239]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 17
+4) Number of jobs terminated abnormally: 8
+5) statistics and partition dumps for normal terminations: a) System Clock: 1329
+                                                           b) Execution time34
+
+6) External Fragmentation in FRACTION : 126/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: []
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 0
+9) Memory Allocation [[180, 239]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 18
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 18
+4) Number of jobs terminated abnormally: 8
+5) statistics and partition dumps for normal terminations: a) System Clock: 1329
+
+
+
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 18
+4) Number of jobs terminated abnormally: 8
+5) statistics and partition dumps for normal terminations: a) System Clock: 1338
+                                                           b) Execution time9
+
+6) External Fragmentation in FRACTION : 284/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: []
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 0
+9) Memory Allocation [[0, 49]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 19
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 19
+4) Number of jobs terminated abnormally: 8
+5) statistics and partition dumps for normal terminations: a) System Clock: 1338
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 20
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 20
+4) Number of jobs terminated abnormally: 9
+5) statistics and partition dumps for normal terminations: a) System Clock: 1347
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 21
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 21
+4) Number of jobs terminated abnormally: 9
+5) statistics and partition dumps for normal terminations: a) System Clock: 1347
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 22
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 22
+4) Number of jobs terminated abnormally: 9
+5) statistics and partition dumps for normal terminations: a) System Clock: 1347
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 23
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 23
+4) Number of jobs terminated abnormally: 9
+5) statistics and partition dumps for normal terminations: a) System Clock: 1347
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 24
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 24
+4) Number of jobs terminated abnormally: 9
+5) statistics and partition dumps for normal terminations: a) System Clock: 1347
+
+
+
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 2
+3) id or # of user job currently executing in DECIMAL 20
+4) Number of jobs terminated abnormally: 10
+5) statistics and partition dumps for normal terminations: a) System Clock: 1434
+                                                           b) Execution time8
+
+6) External Fragmentation in FRACTION : 196/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [22]
+                                  c) Blocked Queue: [23, 24]
+8) Degree of multiprogramming: 2
+9) Memory Allocation [[0, 49], [0, 19]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 24
+4) Number of jobs terminated abnormally: 10
+5) statistics and partition dumps for normal terminations: a) System Clock: 1566
+                                                           b) Execution time106
+
+6) External Fragmentation in FRACTION : 166/256
+7) Queue List for various queues: a) High Priority: [24]
+                                  b) Low Priority: [23, 22]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 3
+9) Memory Allocation [[88, 127]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 24
+4) Number of jobs terminated abnormally: 10
+5) statistics and partition dumps for normal terminations: a) System Clock: 1686
+                                                           b) Execution time226
+
+6) External Fragmentation in FRACTION : 166/256
+7) Queue List for various queues: a) High Priority: [24]
+                                  b) Low Priority: [23, 22]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 3
+9) Memory Allocation [[88, 127]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 24
+4) Number of jobs terminated abnormally: 10
+5) statistics and partition dumps for normal terminations: a) System Clock: 1806
+                                                           b) Execution time346
+
+6) External Fragmentation in FRACTION : 166/256
+7) Queue List for various queues: a) High Priority: [24]
+                                  b) Low Priority: [23, 22]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 3
+9) Memory Allocation [[88, 127]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 24
+4) Number of jobs terminated abnormally: 10
+5) statistics and partition dumps for normal terminations: a) System Clock: 1926
+                                                           b) Execution time466
+
+6) External Fragmentation in FRACTION : 166/256
+7) Queue List for various queues: a) High Priority: [24]
+                                  b) Low Priority: [23, 22]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 3
+9) Memory Allocation [[88, 127]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 23
+4) Number of jobs terminated abnormally: 10
+5) statistics and partition dumps for normal terminations: a) System Clock: 2022
+                                                           b) Execution time16
+
+6) External Fragmentation in FRACTION : 166/256
+7) Queue List for various queues: a) High Priority: [24]
+                                  b) Low Priority: [22]
+                                  c) Blocked Queue: [23]
+8) Degree of multiprogramming: 3
+9) Memory Allocation [[48, 87]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 24
+4) Number of jobs terminated abnormally: 10
+5) statistics and partition dumps for normal terminations: a) System Clock: 2148
+                                                           b) Execution time616
+
+6) External Fragmentation in FRACTION : 166/256
+7) Queue List for various queues: a) High Priority: [24]
+                                  b) Low Priority: [23, 22]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 3
+9) Memory Allocation [[88, 127]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 24
+4) Number of jobs terminated abnormally: 10
+5) statistics and partition dumps for normal terminations: a) System Clock: 2268
+                                                           b) Execution time736
+
+6) External Fragmentation in FRACTION : 166/256
+7) Queue List for various queues: a) High Priority: [24]
+                                  b) Low Priority: [23, 22]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 3
+9) Memory Allocation [[88, 127]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 24
+4) Number of jobs terminated abnormally: 10
+5) statistics and partition dumps for normal terminations: a) System Clock: 2388
+                                                           b) Execution time856
+
+6) External Fragmentation in FRACTION : 166/256
+7) Queue List for various queues: a) High Priority: [24]
+                                  b) Low Priority: [23, 22]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 3
+9) Memory Allocation [[88, 127]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 2
+3) id or # of user job currently executing in DECIMAL 22
+4) Number of jobs terminated abnormally: 10
+5) statistics and partition dumps for normal terminations: a) System Clock: 2490
+                                                           b) Execution time210
+
+6) External Fragmentation in FRACTION : 166/256
+7) Queue List for various queues: a) High Priority: [24]
+                                  b) Low Priority: [22]
+                                  c) Blocked Queue: [23]
+8) Degree of multiprogramming: 2
+9) Memory Allocation [[240, 249], [38, 47]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 22
+4) Number of jobs terminated abnormally: 11
+5) statistics and partition dumps for normal terminations: a) System Clock: 2636
+                                                           b) Execution time240
+
+6) External Fragmentation in FRACTION : 206/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [22]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[240, 249], [38, 47]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 22
+4) Number of jobs terminated abnormally: 11
+5) statistics and partition dumps for normal terminations: a) System Clock: 2726
+                                                           b) Execution time330
+
+6) External Fragmentation in FRACTION : 206/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [22]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[240, 249], [38, 47]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 22
+4) Number of jobs terminated abnormally: 11
+5) statistics and partition dumps for normal terminations: a) System Clock: 2846
+                                                           b) Execution time450
+
+6) External Fragmentation in FRACTION : 206/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [22]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[240, 249], [38, 47]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 22
+4) Number of jobs terminated abnormally: 11
+5) statistics and partition dumps for normal terminations: a) System Clock: 2966
+                                                           b) Execution time570
+
+6) External Fragmentation in FRACTION : 206/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [22]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[240, 249], [38, 47]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 22
+4) Number of jobs terminated abnormally: 11
+5) statistics and partition dumps for normal terminations: a) System Clock: 3086
+                                                           b) Execution time690
+
+6) External Fragmentation in FRACTION : 206/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [22]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[240, 249], [38, 47]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 22
+4) Number of jobs terminated abnormally: 11
+5) statistics and partition dumps for normal terminations: a) System Clock: 3206
+                                                           b) Execution time810
+
+6) External Fragmentation in FRACTION : 206/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [22]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[240, 249], [38, 47]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 22
+4) Number of jobs terminated abnormally: 11
+5) statistics and partition dumps for normal terminations: a) System Clock: 3326
+                                                           b) Execution time930
+
+6) External Fragmentation in FRACTION : 206/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [22]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[240, 249], [38, 47]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 25
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 25
+4) Number of jobs terminated abnormally: 12
+5) statistics and partition dumps for normal terminations: a) System Clock: 3397
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 26
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 26
+4) Number of jobs terminated abnormally: 12
+5) statistics and partition dumps for normal terminations: a) System Clock: 3397
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 27
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 27
+4) Number of jobs terminated abnormally: 13
+5) statistics and partition dumps for normal terminations: a) System Clock: 3413
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 28
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 28
+4) Number of jobs terminated abnormally: 14
+5) statistics and partition dumps for normal terminations: a) System Clock: 3532
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 29
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 29
+4) Number of jobs terminated abnormally: 14
+5) statistics and partition dumps for normal terminations: a) System Clock: 3532
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 30
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 30
+4) Number of jobs terminated abnormally: 14
+5) statistics and partition dumps for normal terminations: a) System Clock: 3532
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 31
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 31
+4) Number of jobs terminated abnormally: 14
+5) statistics and partition dumps for normal terminations: a) System Clock: 3532
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 32
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 32
+4) Number of jobs terminated abnormally: 14
+5) statistics and partition dumps for normal terminations: a) System Clock: 3532
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 33
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 33
+4) Number of jobs terminated abnormally: 14
+5) statistics and partition dumps for normal terminations: a) System Clock: 3532
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 34
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 34
+4) Number of jobs terminated abnormally: 14
+5) statistics and partition dumps for normal terminations: a) System Clock: 3532
+
+
+
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 4
+3) id or # of user job currently executing in DECIMAL 31
+4) Number of jobs terminated abnormally: 14
+5) statistics and partition dumps for normal terminations: a) System Clock: 3633
+                                                           b) Execution time9
+
+6) External Fragmentation in FRACTION : 0/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [29, 32, 33]
+                                  c) Blocked Queue: [34, 28, 30, 31]
+8) Degree of multiprogramming: 4
+9) Memory Allocation [[154, 175]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 4
+3) id or # of user job currently executing in DECIMAL 34
+4) Number of jobs terminated abnormally: 14
+5) statistics and partition dumps for normal terminations: a) System Clock: 3634
+                                                           b) Execution time42
+
+6) External Fragmentation in FRACTION : 20/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [29, 32, 33]
+                                  c) Blocked Queue: [28, 30, 31]
+8) Degree of multiprogramming: 4
+9) Memory Allocation [[236, 255]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 4
+3) id or # of user job currently executing in DECIMAL 30
+4) Number of jobs terminated abnormally: 14
+5) statistics and partition dumps for normal terminations: a) System Clock: 3640
+                                                           b) Execution time34
+
+6) External Fragmentation in FRACTION : 46/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [29, 32, 33]
+                                  c) Blocked Queue: [31, 28]
+8) Degree of multiprogramming: 4
+9) Memory Allocation [[128, 153]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 31
+4) Number of jobs terminated abnormally: 15
+5) statistics and partition dumps for normal terminations: a) System Clock: 3647
+                                                           b) Execution time10
+
+6) External Fragmentation in FRACTION : 90/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [32, 33]
+                                  c) Blocked Queue: [28]
+8) Degree of multiprogramming: 3
+9) Memory Allocation [[154, 175]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 32
+4) Number of jobs terminated abnormally: 15
+5) statistics and partition dumps for normal terminations: a) System Clock: 3707
+                                                           b) Execution time42
+
+6) External Fragmentation in FRACTION : 110/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: []
+                                  c) Blocked Queue: [28, 33]
+8) Degree of multiprogramming: 0
+9) Memory Allocation [[176, 195]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 33
+4) Number of jobs terminated abnormally: 16
+5) statistics and partition dumps for normal terminations: a) System Clock: 3778
+                                                           b) Execution time76
+
+6) External Fragmentation in FRACTION : 216/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [33]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[196, 235]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 33
+4) Number of jobs terminated abnormally: 16
+5) statistics and partition dumps for normal terminations: a) System Clock: 3898
+                                                           b) Execution time196
+
+6) External Fragmentation in FRACTION : 216/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [33]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[196, 235]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 33
+4) Number of jobs terminated abnormally: 16
+5) statistics and partition dumps for normal terminations: a) System Clock: 4018
+                                                           b) Execution time316
+
+6) External Fragmentation in FRACTION : 216/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [33]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[196, 235]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 33
+4) Number of jobs terminated abnormally: 16
+5) statistics and partition dumps for normal terminations: a) System Clock: 4138
+                                                           b) Execution time436
+
+6) External Fragmentation in FRACTION : 216/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [33]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[196, 235]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 33
+4) Number of jobs terminated abnormally: 16
+5) statistics and partition dumps for normal terminations: a) System Clock: 4258
+                                                           b) Execution time556
+
+6) External Fragmentation in FRACTION : 216/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [33]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[196, 235]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 33
+4) Number of jobs terminated abnormally: 16
+5) statistics and partition dumps for normal terminations: a) System Clock: 4378
+                                                           b) Execution time676
+
+6) External Fragmentation in FRACTION : 216/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [33]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[196, 235]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 33
+4) Number of jobs terminated abnormally: 16
+5) statistics and partition dumps for normal terminations: a) System Clock: 4498
+                                                           b) Execution time796
+
+6) External Fragmentation in FRACTION : 216/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [33]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[196, 235]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 33
+4) Number of jobs terminated abnormally: 16
+5) statistics and partition dumps for normal terminations: a) System Clock: 4618
+                                                           b) Execution time916
+
+6) External Fragmentation in FRACTION : 216/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [33]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[196, 235]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 35
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 35
+4) Number of jobs terminated abnormally: 17
+5) statistics and partition dumps for normal terminations: a) System Clock: 4703
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 36
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 36
+4) Number of jobs terminated abnormally: 17
+5) statistics and partition dumps for normal terminations: a) System Clock: 4704
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 37
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 37
+4) Number of jobs terminated abnormally: 17
+5) statistics and partition dumps for normal terminations: a) System Clock: 4704
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 38
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 38
+4) Number of jobs terminated abnormally: 17
+5) statistics and partition dumps for normal terminations: a) System Clock: 4704
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 39
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 39
+4) Number of jobs terminated abnormally: 17
+5) statistics and partition dumps for normal terminations: a) System Clock: 4704
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 40
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 40
+4) Number of jobs terminated abnormally: 17
+5) statistics and partition dumps for normal terminations: a) System Clock: 4704
+
+
+
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 2
+3) id or # of user job currently executing in DECIMAL 39
+4) Number of jobs terminated abnormally: 18
+5) statistics and partition dumps for normal terminations: a) System Clock: 4806
+                                                           b) Execution time10
+
+6) External Fragmentation in FRACTION : 30/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [40]
+                                  c) Blocked Queue: [37, 36, 39]
+8) Degree of multiprogramming: 2
+9) Memory Allocation [[200, 239]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 2
+3) id or # of user job currently executing in DECIMAL 36
+4) Number of jobs terminated abnormally: 18
+5) statistics and partition dumps for normal terminations: a) System Clock: 4907
+                                                           b) Execution time18
+
+6) External Fragmentation in FRACTION : 30/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [40]
+                                  c) Blocked Queue: [39, 37, 36]
+8) Degree of multiprogramming: 2
+9) Memory Allocation [[0, 49]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 2
+3) id or # of user job currently executing in DECIMAL 36
+4) Number of jobs terminated abnormally: 18
+5) statistics and partition dumps for normal terminations: a) System Clock: 4993
+                                                           b) Execution time22
+
+6) External Fragmentation in FRACTION : 80/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [40]
+                                  c) Blocked Queue: [39, 37]
+8) Degree of multiprogramming: 2
+9) Memory Allocation [[0, 49]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 2
+3) id or # of user job currently executing in DECIMAL 39
+4) Number of jobs terminated abnormally: 18
+5) statistics and partition dumps for normal terminations: a) System Clock: 4997
+                                                           b) Execution time38
+
+6) External Fragmentation in FRACTION : 120/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [40]
+                                  c) Blocked Queue: [37]
+8) Degree of multiprogramming: 2
+9) Memory Allocation [[200, 239]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 41
+2) Current Degree of multi programming in DECIMAL: 2
+3) id or # of user job currently executing in DECIMAL 41
+4) Number of jobs terminated abnormally: 18
+5) statistics and partition dumps for normal terminations: a) System Clock: 4997
+
+
+
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 37
+4) Number of jobs terminated abnormally: 18
+5) statistics and partition dumps for normal terminations: a) System Clock: 5032
+                                                           b) Execution time55
+
+6) External Fragmentation in FRACTION : 100/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [41, 40]
+                                  c) Blocked Queue: [37]
+8) Degree of multiprogramming: 3
+9) Memory Allocation [[50, 175]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 37
+4) Number of jobs terminated abnormally: 18
+5) statistics and partition dumps for normal terminations: a) System Clock: 5063
+                                                           b) Execution time56
+
+6) External Fragmentation in FRACTION : 226/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [40, 41]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 3
+9) Memory Allocation [[50, 175]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 42
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 42
+4) Number of jobs terminated abnormally: 18
+5) statistics and partition dumps for normal terminations: a) System Clock: 5063
+
+
+
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 42
+4) Number of jobs terminated abnormally: 18
+5) statistics and partition dumps for normal terminations: a) System Clock: 5135
+                                                           b) Execution time42
+
+6) External Fragmentation in FRACTION : 246/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [41, 40]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 3
+9) Memory Allocation [[200, 239]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 43
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 43
+4) Number of jobs terminated abnormally: 18
+5) statistics and partition dumps for normal terminations: a) System Clock: 5135
+
+
+
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 2
+3) id or # of user job currently executing in DECIMAL 41
+4) Number of jobs terminated abnormally: 19
+5) statistics and partition dumps for normal terminations: a) System Clock: 5182
+                                                           b) Execution time42
+
+6) External Fragmentation in FRACTION : 250/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [40]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 2
+9) Memory Allocation [[176, 199]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 44
+2) Current Degree of multi programming in DECIMAL: 2
+3) id or # of user job currently executing in DECIMAL 44
+4) Number of jobs terminated abnormally: 19
+5) statistics and partition dumps for normal terminations: a) System Clock: 5182
+
+
+
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 40
+4) Number of jobs terminated abnormally: 20
+5) statistics and partition dumps for normal terminations: a) System Clock: 5281
+                                                           b) Execution time360
+
+6) External Fragmentation in FRACTION : 246/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [40]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[240, 249]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 40
+4) Number of jobs terminated abnormally: 20
+5) statistics and partition dumps for normal terminations: a) System Clock: 5401
+                                                           b) Execution time480
+
+6) External Fragmentation in FRACTION : 246/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [40]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[240, 249]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 40
+4) Number of jobs terminated abnormally: 20
+5) statistics and partition dumps for normal terminations: a) System Clock: 5521
+                                                           b) Execution time600
+
+6) External Fragmentation in FRACTION : 246/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [40]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[240, 249]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 40
+4) Number of jobs terminated abnormally: 20
+5) statistics and partition dumps for normal terminations: a) System Clock: 5641
+                                                           b) Execution time720
+
+6) External Fragmentation in FRACTION : 246/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [40]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[240, 249]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 40
+4) Number of jobs terminated abnormally: 20
+5) statistics and partition dumps for normal terminations: a) System Clock: 5761
+                                                           b) Execution time840
+
+6) External Fragmentation in FRACTION : 246/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [40]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[240, 249]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 40
+4) Number of jobs terminated abnormally: 20
+5) statistics and partition dumps for normal terminations: a) System Clock: 5881
+                                                           b) Execution time960
+
+6) External Fragmentation in FRACTION : 246/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [40]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[240, 249]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 45
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 45
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 5922
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 46
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 46
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 5922
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 47
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 47
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 5922
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 48
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 48
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 5922
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 49
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 49
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 5922
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 50
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 50
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 5922
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 51
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 51
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 5922
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 52
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 52
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 5922
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 53
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 53
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 5922
+
+
+
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 9
+3) id or # of user job currently executing in DECIMAL 46
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 5983
+                                                           b) Execution time31
+
+6) External Fragmentation in FRACTION : 4/256
+7) Queue List for various queues: a) High Priority: [46, 51, 53, 49]
+                                  b) Low Priority: [45, 47, 48, 50, 52]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 9
+9) Memory Allocation [[50, 175], [40, 99]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 8
+3) id or # of user job currently executing in DECIMAL 46
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 6019
+                                                           b) Execution time34
+
+6) External Fragmentation in FRACTION : 130/256
+7) Queue List for various queues: a) High Priority: [49, 53]
+                                  b) Low Priority: [45, 47, 48, 50, 52]
+                                  c) Blocked Queue: [51]
+8) Degree of multiprogramming: 8
+9) Memory Allocation [[50, 175], [40, 99]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 7
+3) id or # of user job currently executing in DECIMAL 51
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 6034
+                                                           b) Execution time7
+
+6) External Fragmentation in FRACTION : 82/256
+7) Queue List for various queues: a) High Priority: [53]
+                                  b) Low Priority: [45, 47, 48, 50, 52]
+                                  c) Blocked Queue: [49]
+8) Degree of multiprogramming: 7
+9) Memory Allocation [[202, 219]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 54
+2) Current Degree of multi programming in DECIMAL: 7
+3) id or # of user job currently executing in DECIMAL 54
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 6034
+
+
+
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 8
+3) id or # of user job currently executing in DECIMAL 49
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 6065
+                                                           b) Execution time42
+
+6) External Fragmentation in FRACTION : 88/256
+7) Queue List for various queues: a) High Priority: [53]
+                                  b) Low Priority: [45, 47, 48, 50, 52, 54]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 8
+9) Memory Allocation [[156, 175]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 55
+2) Current Degree of multi programming in DECIMAL: 8
+3) id or # of user job currently executing in DECIMAL 55
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 6065
+
+
+
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 6
+3) id or # of user job currently executing in DECIMAL 53
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 6210
+                                                           b) Execution time180
+
+6) External Fragmentation in FRACTION : 48/256
+7) Queue List for various queues: a) High Priority: [53]
+                                  b) Low Priority: [45, 48, 47, 52, 54]
+                                  c) Blocked Queue: [50, 55]
+8) Degree of multiprogramming: 6
+9) Memory Allocation [[242, 251]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 8
+3) id or # of user job currently executing in DECIMAL 55
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 6315
+                                                           b) Execution time22
+
+6) External Fragmentation in FRACTION : 48/256
+7) Queue List for various queues: a) High Priority: [53]
+                                  b) Low Priority: [45, 48, 47, 50, 52, 54]
+                                  c) Blocked Queue: [55]
+8) Degree of multiprogramming: 8
+9) Memory Allocation [[40, 99]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 7
+3) id or # of user job currently executing in DECIMAL 53
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 6460
+                                                           b) Execution time390
+
+6) External Fragmentation in FRACTION : 48/256
+7) Queue List for various queues: a) High Priority: [53]
+                                  b) Low Priority: [45, 47, 50, 48, 52, 54]
+                                  c) Blocked Queue: [55]
+8) Degree of multiprogramming: 7
+9) Memory Allocation [[242, 251]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 8
+3) id or # of user job currently executing in DECIMAL 55
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 6538
+                                                           b) Execution time52
+
+6) External Fragmentation in FRACTION : 48/256
+7) Queue List for various queues: a) High Priority: [53]
+                                  b) Low Priority: [45, 47, 50, 48, 52, 54]
+                                  c) Blocked Queue: [55]
+8) Degree of multiprogramming: 8
+9) Memory Allocation [[40, 99]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 8
+3) id or # of user job currently executing in DECIMAL 55
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 6572
+                                                           b) Execution time56
+
+6) External Fragmentation in FRACTION : 174/256
+7) Queue List for various queues: a) High Priority: [53]
+                                  b) Low Priority: [45, 47, 50, 48, 52, 54]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 8
+9) Memory Allocation [[40, 99]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 4
+3) id or # of user job currently executing in DECIMAL 48
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 6581
+                                                           b) Execution time8
+
+6) External Fragmentation in FRACTION : 112/256
+7) Queue List for various queues: a) High Priority: [53]
+                                  b) Low Priority: [52, 54]
+                                  c) Blocked Queue: [45, 47, 50]
+8) Degree of multiprogramming: 4
+9) Memory Allocation [[176, 199], [100, 119]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 5
+3) id or # of user job currently executing in DECIMAL 53
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 6671
+                                                           b) Execution time570
+
+6) External Fragmentation in FRACTION : 108/256
+7) Queue List for various queues: a) High Priority: [53]
+                                  b) Low Priority: [45, 47, 52, 54]
+                                  c) Blocked Queue: [50]
+8) Degree of multiprogramming: 5
+9) Memory Allocation [[242, 251]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 6
+3) id or # of user job currently executing in DECIMAL 53
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 6791
+                                                           b) Execution time690
+
+6) External Fragmentation in FRACTION : 108/256
+7) Queue List for various queues: a) High Priority: [53]
+                                  b) Low Priority: [50, 45, 47, 52, 54]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 6
+9) Memory Allocation [[242, 251]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 6
+3) id or # of user job currently executing in DECIMAL 53
+4) Number of jobs terminated abnormally: 21
+5) statistics and partition dumps for normal terminations: a) System Clock: 6911
+                                                           b) Execution time810
+
+6) External Fragmentation in FRACTION : 108/256
+7) Queue List for various queues: a) High Priority: [53]
+                                  b) Low Priority: [50, 45, 47, 52, 54]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 6
+9) Memory Allocation [[242, 251]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 4
+3) id or # of user job currently executing in DECIMAL 53
+4) Number of jobs terminated abnormally: 22
+5) statistics and partition dumps for normal terminations: a) System Clock: 7011
+                                                           b) Execution time900
+
+6) External Fragmentation in FRACTION : 148/256
+7) Queue List for various queues: a) High Priority: [53]
+                                  b) Low Priority: [45, 50, 54]
+                                  c) Blocked Queue: [52]
+8) Degree of multiprogramming: 4
+9) Memory Allocation [[242, 251]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 52
+4) Number of jobs terminated abnormally: 23
+5) statistics and partition dumps for normal terminations: a) System Clock: 7116
+                                                           b) Execution time5
+
+6) External Fragmentation in FRACTION : 158/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [50, 54]
+                                  c) Blocked Queue: [52]
+8) Degree of multiprogramming: 3
+9) Memory Allocation [[220, 241]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 2
+3) id or # of user job currently executing in DECIMAL 50
+4) Number of jobs terminated abnormally: 23
+5) statistics and partition dumps for normal terminations: a) System Clock: 7117
+                                                           b) Execution time19
+
+6) External Fragmentation in FRACTION : 184/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [54]
+                                  c) Blocked Queue: [52]
+8) Degree of multiprogramming: 2
+9) Memory Allocation [[176, 201]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 56
+2) Current Degree of multi programming in DECIMAL: 2
+3) id or # of user job currently executing in DECIMAL 56
+4) Number of jobs terminated abnormally: 23
+5) statistics and partition dumps for normal terminations: a) System Clock: 7117
+
+
+
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 52
+4) Number of jobs terminated abnormally: 23
+5) statistics and partition dumps for normal terminations: a) System Clock: 7135
+                                                           b) Execution time10
+
+6) External Fragmentation in FRACTION : 32/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: []
+                                  c) Blocked Queue: [54, 56]
+8) Degree of multiprogramming: 0
+9) Memory Allocation [[220, 241], [50, 71]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 57
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 57
+4) Number of jobs terminated abnormally: 23
+5) statistics and partition dumps for normal terminations: a) System Clock: 7135
+
+
+
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 54
+4) Number of jobs terminated abnormally: 23
+5) statistics and partition dumps for normal terminations: a) System Clock: 7142
+                                                           b) Execution time7
+
+6) External Fragmentation in FRACTION : 28/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: []
+                                  c) Blocked Queue: [56, 57]
+8) Degree of multiprogramming: 0
+9) Memory Allocation [[202, 219], [36, 49]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 57
+4) Number of jobs terminated abnormally: 23
+5) statistics and partition dumps for normal terminations: a) System Clock: 7149
+                                                           b) Execution time9
+
+6) External Fragmentation in FRACTION : 46/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: []
+                                  c) Blocked Queue: [56]
+8) Degree of multiprogramming: 0
+9) Memory Allocation [[50, 71]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 58
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 58
+4) Number of jobs terminated abnormally: 24
+5) statistics and partition dumps for normal terminations: a) System Clock: 7160
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 59
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 59
+4) Number of jobs terminated abnormally: 24
+5) statistics and partition dumps for normal terminations: a) System Clock: 7160
+
+
+
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 59
+4) Number of jobs terminated abnormally: 25
+5) statistics and partition dumps for normal terminations: a) System Clock: 7221
+                                                           b) Execution time24
+
+6) External Fragmentation in FRACTION : 256/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: []
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 0
+9) Memory Allocation [[130, 165]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 60
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 60
+4) Number of jobs terminated abnormally: 25
+5) statistics and partition dumps for normal terminations: a) System Clock: 7221
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 61
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 61
+4) Number of jobs terminated abnormally: 26
+5) statistics and partition dumps for normal terminations: a) System Clock: 7257
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 62
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 62
+4) Number of jobs terminated abnormally: 26
+5) statistics and partition dumps for normal terminations: a) System Clock: 7257
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 63
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 63
+4) Number of jobs terminated abnormally: 26
+5) statistics and partition dumps for normal terminations: a) System Clock: 7257
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 64
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 64
+4) Number of jobs terminated abnormally: 26
+5) statistics and partition dumps for normal terminations: a) System Clock: 7257
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 65
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 65
+4) Number of jobs terminated abnormally: 26
+5) statistics and partition dumps for normal terminations: a) System Clock: 7257
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 66
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 66
+4) Number of jobs terminated abnormally: 26
+5) statistics and partition dumps for normal terminations: a) System Clock: 7257
+
+
+
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 4
+3) id or # of user job currently executing in DECIMAL 63
+4) Number of jobs terminated abnormally: 26
+5) statistics and partition dumps for normal terminations: a) System Clock: 7326
+                                                           b) Execution time10
+
+6) External Fragmentation in FRACTION : 8/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [62, 64, 66]
+                                  c) Blocked Queue: [65, 61, 63]
+8) Degree of multiprogramming: 4
+9) Memory Allocation [[166, 205], [128, 167]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 65
+4) Number of jobs terminated abnormally: 27
+5) statistics and partition dumps for normal terminations: a) System Clock: 7333
+                                                           b) Execution time42
+
+6) External Fragmentation in FRACTION : 50/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [64, 66]
+                                  c) Blocked Queue: [61, 63]
+8) Degree of multiprogramming: 3
+9) Memory Allocation [[208, 227]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 66
+4) Number of jobs terminated abnormally: 28
+5) statistics and partition dumps for normal terminations: a) System Clock: 7404
+                                                           b) Execution time42
+
+6) External Fragmentation in FRACTION : 110/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: []
+                                  c) Blocked Queue: [61, 64]
+8) Degree of multiprogramming: 0
+9) Memory Allocation [[228, 247]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: normal
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 64
+4) Number of jobs terminated abnormally: 29
+5) statistics and partition dumps for normal terminations: a) System Clock: 7430
+                                                           b) Execution time34
+
+6) External Fragmentation in FRACTION : 216/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: []
+                                  c) Blocked Queue: [64]
+8) Degree of multiprogramming: 0
+9) Memory Allocation [[206, 245], [168, 207]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 64
+4) Number of jobs terminated abnormally: 29
+5) statistics and partition dumps for normal terminations: a) System Clock: 7446
+                                                           b) Execution time50
+
+6) External Fragmentation in FRACTION : 256/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: []
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 0
+9) Memory Allocation [[206, 245], [168, 207]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 67
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 67
+4) Number of jobs terminated abnormally: 29
+5) statistics and partition dumps for normal terminations: a) System Clock: 7446
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 68
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 68
+4) Number of jobs terminated abnormally: 30
+5) statistics and partition dumps for normal terminations: a) System Clock: 7483
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 69
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 69
+4) Number of jobs terminated abnormally: 30
+5) statistics and partition dumps for normal terminations: a) System Clock: 7483
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 70
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 70
+4) Number of jobs terminated abnormally: 30
+5) statistics and partition dumps for normal terminations: a) System Clock: 7483
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 71
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 71
+4) Number of jobs terminated abnormally: 30
+5) statistics and partition dumps for normal terminations: a) System Clock: 7483
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 72
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 72
+4) Number of jobs terminated abnormally: 30
+5) statistics and partition dumps for normal terminations: a) System Clock: 7483
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 73
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 73
+4) Number of jobs terminated abnormally: 30
+5) statistics and partition dumps for normal terminations: a) System Clock: 7483
+
+
+
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 6
+3) id or # of user job currently executing in DECIMAL 71
+4) Number of jobs terminated abnormally: 30
+5) statistics and partition dumps for normal terminations: a) System Clock: 7484
+                                                           b) Execution time1
+
+6) External Fragmentation in FRACTION : 52/256
+7) Queue List for various queues: a) High Priority: [72, 73]
+                                  b) Low Priority: [68, 69, 70]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 6
+9) Memory Allocation [[128, 167]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 3
+3) id or # of user job currently executing in DECIMAL 73
+4) Number of jobs terminated abnormally: 32
+5) statistics and partition dumps for normal terminations: a) System Clock: 7529
+                                                           b) Execution time5
+
+6) External Fragmentation in FRACTION : 178/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [69, 70]
+                                  c) Blocked Queue: [73]
+8) Degree of multiprogramming: 3
+9) Memory Allocation [[168, 207]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 69
+4) Number of jobs terminated abnormally: 32
+5) statistics and partition dumps for normal terminations: a) System Clock: 7543
+                                                           b) Execution time8
+
+6) External Fragmentation in FRACTION : 198/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: []
+                                  c) Blocked Queue: [73]
+8) Degree of multiprogramming: 0
+9) Memory Allocation [[228, 247]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 75
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 75
+4) Number of jobs terminated abnormally: 33
+5) statistics and partition dumps for normal terminations: a) System Clock: 7543
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 76
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 76
+4) Number of jobs terminated abnormally: 35
+5) statistics and partition dumps for normal terminations: a) System Clock: 7545
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 75
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 75
+4) Number of jobs terminated abnormally: 35
+5) statistics and partition dumps for normal terminations: a) System Clock: 7545
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 78
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 78
+4) Number of jobs terminated abnormally: 35
+5) statistics and partition dumps for normal terminations: a) System Clock: 7545
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 79
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 79
+4) Number of jobs terminated abnormally: 35
+5) statistics and partition dumps for normal terminations: a) System Clock: 7545
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 80
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 80
+4) Number of jobs terminated abnormally: 35
+5) statistics and partition dumps for normal terminations: a) System Clock: 7545
+
+
+
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 4
+3) id or # of user job currently executing in DECIMAL 75
+4) Number of jobs terminated abnormally: 35
+5) statistics and partition dumps for normal terminations: a) System Clock: 7599
+                                                           b) Execution time7
+
+6) External Fragmentation in FRACTION : 94/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [76, 78, 80]
+                                  c) Blocked Queue: [79, 73]
+8) Degree of multiprogramming: 4
+9) Memory Allocation [[208, 227], [120, 137]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 2
+3) id or # of user job currently executing in DECIMAL 79
+4) Number of jobs terminated abnormally: 35
+5) statistics and partition dumps for normal terminations: a) System Clock: 7610
+                                                           b) Execution time42
+
+6) External Fragmentation in FRACTION : 112/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [80]
+                                  c) Blocked Queue: [73, 76, 78]
+8) Degree of multiprogramming: 2
+9) Memory Allocation [[228, 247], [138, 157]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 2
+3) id or # of user job currently executing in DECIMAL 73
+4) Number of jobs terminated abnormally: 35
+5) statistics and partition dumps for normal terminations: a) System Clock: 7611
+                                                           b) Execution time16
+
+6) External Fragmentation in FRACTION : 152/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [80]
+                                  c) Blocked Queue: [76, 78]
+8) Degree of multiprogramming: 2
+9) Memory Allocation [[168, 207], [84, 119]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 81
+2) Current Degree of multi programming in DECIMAL: 2
+3) id or # of user job currently executing in DECIMAL 81
+4) Number of jobs terminated abnormally: 36
+5) statistics and partition dumps for normal terminations: a) System Clock: 7611
+
+
+
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 78
+4) Number of jobs terminated abnormally: 38
+5) statistics and partition dumps for normal terminations: a) System Clock: 7627
+                                                           b) Execution time9
+
+6) External Fragmentation in FRACTION : 336/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: []
+                                  c) Blocked Queue: [81]
+8) Degree of multiprogramming: 0
+9) Memory Allocation [[0, 105], [0, 21]]
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 83
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 83
+4) Number of jobs terminated abnormally: 38
+5) statistics and partition dumps for normal terminations: a) System Clock: 7627
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 84
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 84
+4) Number of jobs terminated abnormally: 40
+5) statistics and partition dumps for normal terminations: a) System Clock: 7653
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 85
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 85
+4) Number of jobs terminated abnormally: 40
+5) statistics and partition dumps for normal terminations: a) System Clock: 7653
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 86
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 86
+4) Number of jobs terminated abnormally: 40
+5) statistics and partition dumps for normal terminations: a) System Clock: 7653
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 87
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 87
+4) Number of jobs terminated abnormally: 40
+5) statistics and partition dumps for normal terminations: a) System Clock: 7653
+
+
+
+
+
+===========================================================================
+===========================JOB INITIATION=================================
+1) Warnings and error messages indexed by user job ids: 88
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 88
+4) Number of jobs terminated abnormally: 40
+5) statistics and partition dumps for normal terminations: a) System Clock: 7653
+
+
+
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 0
+3) id or # of user job currently executing in DECIMAL 85
+4) Number of jobs terminated abnormally: 41
+5) statistics and partition dumps for normal terminations: a) System Clock: 7660
+                                                           b) Execution time2
+
+6) External Fragmentation in FRACTION : 164/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: []
+                                  c) Blocked Queue: [86, 87, 88]
+8) Degree of multiprogramming: 0
+9) Memory Allocation [[158, 181]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 2
+3) id or # of user job currently executing in DECIMAL 87
+4) Number of jobs terminated abnormally: 41
+5) statistics and partition dumps for normal terminations: a) System Clock: 7743
+                                                           b) Execution time26
+
+6) External Fragmentation in FRACTION : 336/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [88]
+                                  c) Blocked Queue: [86]
+8) Degree of multiprogramming: 2
+9) Memory Allocation [[0, 21]]
+
+
+===========================================================================
+===========================JOB TERMINATION=================================
+1) Warnings and error messages indexed by user job ids: NORMAL
+2) Current Degree of multi programming in DECIMAL: 2
+3) id or # of user job currently executing in DECIMAL 86
+4) Number of jobs terminated abnormally: 41
+5) statistics and partition dumps for normal terminations: a) System Clock: 7774
+                                                           b) Execution time31
+
+6) External Fragmentation in FRACTION : 234/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [88]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 2
+9) Memory Allocation [[84, 133]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 88
+4) Number of jobs terminated abnormally: 41
+5) statistics and partition dumps for normal terminations: a) System Clock: 7894
+                                                           b) Execution time181
+
+6) External Fragmentation in FRACTION : 210/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [88]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[134, 169]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 88
+4) Number of jobs terminated abnormally: 41
+5) statistics and partition dumps for normal terminations: a) System Clock: 8014
+                                                           b) Execution time301
+
+6) External Fragmentation in FRACTION : 210/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [88]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[134, 169]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 88
+4) Number of jobs terminated abnormally: 41
+5) statistics and partition dumps for normal terminations: a) System Clock: 8134
+                                                           b) Execution time421
+
+6) External Fragmentation in FRACTION : 210/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [88]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[134, 169]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 88
+4) Number of jobs terminated abnormally: 41
+5) statistics and partition dumps for normal terminations: a) System Clock: 8254
+                                                           b) Execution time541
+
+6) External Fragmentation in FRACTION : 210/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [88]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[134, 169]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 88
+4) Number of jobs terminated abnormally: 41
+5) statistics and partition dumps for normal terminations: a) System Clock: 8374
+                                                           b) Execution time661
+
+6) External Fragmentation in FRACTION : 210/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [88]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[134, 169]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 88
+4) Number of jobs terminated abnormally: 41
+5) statistics and partition dumps for normal terminations: a) System Clock: 8494
+                                                           b) Execution time781
+
+6) External Fragmentation in FRACTION : 210/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [88]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[134, 169]]
+
+
+===========================================================================
+===========================CONTEXT SWITCH=================================
+1) Warnings and error messages indexed by user job ids: null
+2) Current Degree of multi programming in DECIMAL: 1
+3) id or # of user job currently executing in DECIMAL 88
+4) Number of jobs terminated abnormally: 41
+5) statistics and partition dumps for normal terminations: a) System Clock: 8614
+                                                           b) Execution time901
+
+6) External Fragmentation in FRACTION : 210/256
+7) Queue List for various queues: a) High Priority: []
+                                  b) Low Priority: [88]
+                                  c) Blocked Queue: []
+8) Degree of multiprogramming: 1
+9) Memory Allocation [[134, 169]]
+

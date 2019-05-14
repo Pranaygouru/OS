@@ -1,0 +1,984 @@
+1) Cumulative job identification Number in DECIMAL: 1
+2) All the start and end addresses occupied by this job: [[0, 19]]
+3) Arrival Time: 0
+4) Time the job entered the system: 0
+5) Time the job is leaving the system: 2a
+6) Execution Time:42
+7) Time spent during I/O :10
+8) Priority 0
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 2
+2) All the start and end addresses occupied by this job: [[0, 19]]
+3) Arrival Time: 2
+4) Time the job entered the system: 2a
+5) Time the job is leaving the system: 31
+6) Execution Time:7
+7) Time spent during I/O :20
+8) Priority 0
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 3
+2) All the start and end addresses occupied by this job: [[0, 19]]
+3) Arrival Time: 3
+4) Time the job entered the system: 31
+5) Time the job is leaving the system: 36
+6) Execution Time:5
+7) Time spent during I/O :10
+8) Priority 1
+9) Nature of Termination: ABNORMAL
+                        : ILLEGAL INSTRUCTION
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 5
+2) All the start and end addresses occupied by this job: [[20, 33]]
+3) Arrival Time: 7
+4) Time the job entered the system: 36
+5) Time the job is leaving the system: 97
+6) Execution Time:7
+7) Time spent during I/O :20
+8) Priority 1
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 4
+2) All the start and end addresses occupied by this job: [[0, 19]]
+3) Arrival Time: 5
+4) Time the job entered the system: 36
+5) Time the job is leaving the system: 441
+6) Execution Time:1001
+7) Time spent during I/O :0
+8) Priority 1
+9) Nature of Termination: ABNORMAL
+                        : INFINITE LOOP IN THE PROGRAM
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 7
+2) All the start and end addresses occupied by this job: [[208, 247]]
+3) Arrival Time: 11
+4) Time the job entered the system: 36
+5) Time the job is leaving the system: 458
+6) Execution Time:38
+7) Time spent during I/O :70
+8) Priority 0
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 8
+2) All the start and end addresses occupied by this job: [[208, 247]]
+3) Arrival Time: 14
+4) Time the job entered the system: 458
+5) Time the job is leaving the system: 465
+6) Execution Time:13
+7) Time spent during I/O :30
+8) Priority 1
+9) Nature of Termination: ABNORMAL
+                        : MEMORY RANGE FAULT
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 9
+2) All the start and end addresses occupied by this job: [[208, 247], [0, 23]]
+3) Arrival Time: 16
+4) Time the job entered the system: 465
+5) Time the job is leaving the system: 468
+6) Execution Time:3
+7) Time spent during I/O :0
+8) Priority 1
+9) Nature of Termination: ABNORMAL
+                        : ILLEGAL INSTRUCTION
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 13
+2) All the start and end addresses occupied by this job: [[136, 171]]
+3) Arrival Time: 28
+4) Time the job entered the system: 465
+5) Time the job is leaving the system: 498
+6) Execution Time:30
+7) Time spent during I/O :20
+8) Priority 1
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 14
+2) All the start and end addresses occupied by this job: []
+3) Arrival Time: 0
+4) Time the job entered the system: null
+5) Time the job is leaving the system: 498
+6) Execution Time:0
+7) Time spent during I/O :0
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : MISSING JOB
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 12
+2) All the start and end addresses occupied by this job: [[100, 135]]
+3) Arrival Time: 26
+4) Time the job entered the system: 465
+5) Time the job is leaving the system: 4e1
+6) Execution Time:18
+7) Time spent during I/O :30
+8) Priority 1
+9) Nature of Termination: ABNORMAL
+                        : MEMORY RANGE FAULT
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 10
+2) All the start and end addresses occupied by this job: [[24, 49]]
+3) Arrival Time: 0
+4) Time the job entered the system: 465
+5) Time the job is leaving the system: 4e8
+6) Execution Time:37
+7) Time spent during I/O :30
+8) Priority 0
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 0
+2) All the start and end addresses occupied by this job: []
+3) Arrival Time: 0
+4) Time the job entered the system: null
+5) Time the job is leaving the system: 4e8
+6) Execution Time:0
+7) Time spent during I/O :0
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : MISSING JOB
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 11
+2) All the start and end addresses occupied by this job: [[50, 99], [0, 49]]
+3) Arrival Time: 20
+4) Time the job entered the system: 465
+5) Time the job is leaving the system: 52e
+6) Execution Time:51
+7) Time spent during I/O :60
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : MEMORY RANGE FAULT
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 17
+2) All the start and end addresses occupied by this job: [[180, 239]]
+3) Arrival Time: 40
+4) Time the job entered the system: 4e8
+5) Time the job is leaving the system: 531
+6) Execution Time:34
+7) Time spent during I/O :20
+8) Priority 0
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 18
+2) All the start and end addresses occupied by this job: [[0, 49]]
+3) Arrival Time: 43
+4) Time the job entered the system: 531
+5) Time the job is leaving the system: 53a
+6) Execution Time:9
+7) Time spent during I/O :20
+8) Priority 1
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 19
+2) All the start and end addresses occupied by this job: [[0, 49]]
+3) Arrival Time: 47
+4) Time the job entered the system: 53a
+5) Time the job is leaving the system: 543
+6) Execution Time:9
+7) Time spent during I/O :20
+8) Priority 1
+9) Nature of Termination: ABNORMAL
+                        : ILLEGAL INSTRUCTION
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 21
+2) All the start and end addresses occupied by this job: [[180, 239], [20, 37]]
+3) Arrival Time: 53
+4) Time the job entered the system: 543
+5) Time the job is leaving the system: 574
+6) Execution Time:5
+7) Time spent during I/O :10
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : ILLEGAL INSTRUCTION
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 20
+2) All the start and end addresses occupied by this job: [[0, 49], [0, 19]]
+3) Arrival Time: 49
+4) Time the job entered the system: 543
+5) Time the job is leaving the system: 59a
+6) Execution Time:8
+7) Time spent during I/O :20
+8) Priority 0
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 24
+2) All the start and end addresses occupied by this job: [[88, 127]]
+3) Arrival Time: 61
+4) Time the job entered the system: 543
+5) Time the job is leaving the system: a2d
+6) Execution Time:1001
+7) Time spent during I/O :40
+8) Priority 1
+9) Nature of Termination: ABNORMAL
+                        : INFINITE LOOP IN THE PROGRAM
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 22
+2) All the start and end addresses occupied by this job: [[240, 249], [38, 47]]
+3) Arrival Time: 55
+4) Time the job entered the system: 543
+5) Time the job is leaving the system: d45
+6) Execution Time:1001
+7) Time spent during I/O :0
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : INFINITE LOOP IN THE PROGRAM
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 25
+2) All the start and end addresses occupied by this job: [[0, 131]]
+3) Arrival Time: 63
+4) Time the job entered the system: d45
+5) Time the job is leaving the system: d55
+6) Execution Time:15
+7) Time spent during I/O :0
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : MEMORY RANGE FAULT
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 27
+2) All the start and end addresses occupied by this job: [[0, 241]]
+3) Arrival Time: 69
+4) Time the job entered the system: d55
+5) Time the job is leaving the system: dcc
+6) Execution Time:119
+7) Time spent during I/O :0
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : ILLEGAL INSTRUCTION
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 34
+2) All the start and end addresses occupied by this job: [[236, 255]]
+3) Arrival Time: 89
+4) Time the job entered the system: dcc
+5) Time the job is leaving the system: e32
+6) Execution Time:42
+7) Time spent during I/O :10
+8) Priority 1
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 30
+2) All the start and end addresses occupied by this job: [[128, 153]]
+3) Arrival Time: 76
+4) Time the job entered the system: dcc
+5) Time the job is leaving the system: e38
+6) Execution Time:34
+7) Time spent during I/O :30
+8) Priority 1
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 29
+2) All the start and end addresses occupied by this job: [[106, 127]]
+3) Arrival Time: 75
+4) Time the job entered the system: dcc
+5) Time the job is leaving the system: e3e
+6) Execution Time:6
+7) Time spent during I/O :0
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : ILLEGAL INSTRUCTION
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 31
+2) All the start and end addresses occupied by this job: [[154, 175]]
+3) Arrival Time: 80
+4) Time the job entered the system: dcc
+5) Time the job is leaving the system: e3f
+6) Execution Time:10
+7) Time spent during I/O :30
+8) Priority 1
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 32
+2) All the start and end addresses occupied by this job: [[176, 195]]
+3) Arrival Time: 85
+4) Time the job entered the system: dcc
+5) Time the job is leaving the system: e7b
+6) Execution Time:42
+7) Time spent during I/O :10
+8) Priority 0
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 28
+2) All the start and end addresses occupied by this job: [[0, 241], [0, 105]]
+3) Arrival Time: 71
+4) Time the job entered the system: dcc
+5) Time the job is leaving the system: e7d
+6) Execution Time:36
+7) Time spent during I/O :60
+8) Priority 1
+9) Nature of Termination: ABNORMAL
+                        : ILLEGAL INSTRUCTION
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 33
+2) All the start and end addresses occupied by this job: [[196, 235]]
+3) Arrival Time: 87
+4) Time the job entered the system: dcc
+5) Time the job is leaving the system: 125f
+6) Execution Time:1001
+7) Time spent during I/O :40
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : INFINITE LOOP IN THE PROGRAM
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 38
+2) All the start and end addresses occupied by this job: [[176, 199]]
+3) Arrival Time: 105
+4) Time the job entered the system: 1260
+5) Time the job is leaving the system: 126d
+6) Execution Time:3
+7) Time spent during I/O :0
+8) Priority 1
+9) Nature of Termination: ABNORMAL
+                        : ILLEGAL INSTRUCTION
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 36
+2) All the start and end addresses occupied by this job: [[0, 49]]
+3) Arrival Time: 95
+4) Time the job entered the system: 1260
+5) Time the job is leaving the system: 1381
+6) Execution Time:22
+7) Time spent during I/O :80
+8) Priority 1
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 39
+2) All the start and end addresses occupied by this job: [[200, 239]]
+3) Arrival Time: 107
+4) Time the job entered the system: 1260
+5) Time the job is leaving the system: 1385
+6) Execution Time:38
+7) Time spent during I/O :70
+8) Priority 0
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 37
+2) All the start and end addresses occupied by this job: [[50, 175]]
+3) Arrival Time: 99
+4) Time the job entered the system: 1260
+5) Time the job is leaving the system: 13c7
+6) Execution Time:56
+7) Time spent during I/O :90
+8) Priority 1
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 42
+2) All the start and end addresses occupied by this job: [[200, 239]]
+3) Arrival Time: 119
+4) Time the job entered the system: 13c7
+5) Time the job is leaving the system: 140f
+6) Execution Time:42
+7) Time spent during I/O :10
+8) Priority 1
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 43
+2) All the start and end addresses occupied by this job: [[200, 239]]
+3) Arrival Time: 122
+4) Time the job entered the system: 140f
+5) Time the job is leaving the system: 141f
+6) Execution Time:5
+7) Time spent during I/O :10
+8) Priority 1
+9) Nature of Termination: ABNORMAL
+                        : ILLEGAL INSTRUCTION
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 41
+2) All the start and end addresses occupied by this job: [[176, 199]]
+3) Arrival Time: 115
+4) Time the job entered the system: 1385
+5) Time the job is leaving the system: 143e
+6) Execution Time:42
+7) Time spent during I/O :10
+8) Priority 0
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 44
+2) All the start and end addresses occupied by this job: [[200, 239]]
+3) Arrival Time: 123
+4) Time the job entered the system: 143e
+5) Time the job is leaving the system: 1483
+6) Execution Time:9
+7) Time spent during I/O :20
+8) Priority 1
+9) Nature of Termination: ABNORMAL
+                        : ILLEGAL INSTRUCTION
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 40
+2) All the start and end addresses occupied by this job: [[240, 249]]
+3) Arrival Time: 110
+4) Time the job entered the system: 1260
+5) Time the job is leaving the system: 1722
+6) Execution Time:1001
+7) Time spent during I/O :0
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : INFINITE LOOP IN THE PROGRAM
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 46
+2) All the start and end addresses occupied by this job: [[50, 175], [40, 99]]
+3) Arrival Time: 128
+4) Time the job entered the system: 1722
+5) Time the job is leaving the system: 1783
+6) Execution Time:34
+7) Time spent during I/O :20
+8) Priority 1
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 51
+2) All the start and end addresses occupied by this job: [[202, 219]]
+3) Arrival Time: 146
+4) Time the job entered the system: 1722
+5) Time the job is leaving the system: 1792
+6) Execution Time:7
+7) Time spent during I/O :20
+8) Priority 1
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 49
+2) All the start and end addresses occupied by this job: [[156, 175]]
+3) Arrival Time: 138
+4) Time the job entered the system: 1722
+5) Time the job is leaving the system: 17b1
+6) Execution Time:42
+7) Time spent during I/O :10
+8) Priority 1
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 55
+2) All the start and end addresses occupied by this job: [[40, 99]]
+3) Arrival Time: 158
+4) Time the job entered the system: 17b1
+5) Time the job is leaving the system: 19ac
+6) Execution Time:56
+7) Time spent during I/O :100
+8) Priority 1
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 48
+2) All the start and end addresses occupied by this job: [[176, 199], [100, 119]]
+3) Arrival Time: 136
+4) Time the job entered the system: 1722
+5) Time the job is leaving the system: 19b5
+6) Execution Time:8
+7) Time spent during I/O :20
+8) Priority 0
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 47
+2) All the start and end addresses occupied by this job: [[0, 49], [0, 39]]
+3) Arrival Time: 133
+4) Time the job entered the system: 1722
+5) Time the job is leaving the system: 1b07
+6) Execution Time:13
+7) Time spent during I/O :30
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : MEMORY RANGE FAULT
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 53
+2) All the start and end addresses occupied by this job: [[242, 251]]
+3) Arrival Time: 151
+4) Time the job entered the system: 1722
+5) Time the job is leaving the system: 1bc8
+6) Execution Time:1001
+7) Time spent during I/O :0
+8) Priority 1
+9) Nature of Termination: ABNORMAL
+                        : INFINITE LOOP IN THE PROGRAM
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 50
+2) All the start and end addresses occupied by this job: [[176, 201]]
+3) Arrival Time: 143
+4) Time the job entered the system: 1722
+5) Time the job is leaving the system: 1bcd
+6) Execution Time:19
+7) Time spent during I/O :40
+8) Priority 0
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 52
+2) All the start and end addresses occupied by this job: [[220, 241], [50, 71]]
+3) Arrival Time: 149
+4) Time the job entered the system: 1722
+5) Time the job is leaving the system: 1bdf
+6) Execution Time:10
+7) Time spent during I/O :30
+8) Priority 0
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 54
+2) All the start and end addresses occupied by this job: [[202, 219], [36, 49]]
+3) Arrival Time: 154
+4) Time the job entered the system: 1792
+5) Time the job is leaving the system: 1be6
+6) Execution Time:7
+7) Time spent during I/O :20
+8) Priority 0
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 57
+2) All the start and end addresses occupied by this job: [[50, 71]]
+3) Arrival Time: 165
+4) Time the job entered the system: 1bdf
+5) Time the job is leaving the system: 1bed
+6) Execution Time:9
+7) Time spent during I/O :20
+8) Priority 1
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 56
+2) All the start and end addresses occupied by this job: [[72, 245]]
+3) Arrival Time: 160
+4) Time the job entered the system: 1bcd
+5) Time the job is leaving the system: 1bf8
+6) Execution Time:22
+7) Time spent during I/O :90
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : MEMORY RANGE FAULT
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 58
+2) All the start and end addresses occupied by this job: [[72, 245], [0, 129]]
+3) Arrival Time: 169
+4) Time the job entered the system: 1bf8
+5) Time the job is leaving the system: 1c1d
+6) Execution Time:37
+7) Time spent during I/O :0
+8) Priority 1
+9) Nature of Termination: ABNORMAL
+                        : MEMORY RANGE FAULT
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 59
+2) All the start and end addresses occupied by this job: [[130, 165]]
+3) Arrival Time: 170
+4) Time the job entered the system: 1bf8
+5) Time the job is leaving the system: 1c35
+6) Execution Time:24
+7) Time spent during I/O :20
+8) Priority 0
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 60
+2) All the start and end addresses occupied by this job: [[0, 129]]
+3) Arrival Time: 174
+4) Time the job entered the system: 1c35
+5) Time the job is leaving the system: 1c59
+6) Execution Time:36
+7) Time spent during I/O :60
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : ILLEGAL INSTRUCTION
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 62
+2) All the start and end addresses occupied by this job: [[130, 165], [106, 127]]
+3) Arrival Time: 184
+4) Time the job entered the system: 1c59
+5) Time the job is leaving the system: 1ca4
+6) Execution Time:6
+7) Time spent during I/O :0
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : ILLEGAL INSTRUCTION
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 65
+2) All the start and end addresses occupied by this job: [[208, 227]]
+3) Arrival Time: 193
+4) Time the job entered the system: 1c59
+5) Time the job is leaving the system: 1ca5
+6) Execution Time:42
+7) Time spent during I/O :10
+8) Priority 1
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 63
+2) All the start and end addresses occupied by this job: [[166, 205], [128, 167]]
+3) Arrival Time: 187
+4) Time the job entered the system: 1c59
+5) Time the job is leaving the system: 1cad
+6) Execution Time:13
+7) Time spent during I/O :30
+8) Priority 1
+9) Nature of Termination: ABNORMAL
+                        : MEMORY RANGE FAULT
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 66
+2) All the start and end addresses occupied by this job: [[228, 247]]
+3) Arrival Time: 199
+4) Time the job entered the system: 1c59
+5) Time the job is leaving the system: 1cec
+6) Execution Time:42
+7) Time spent during I/O :10
+8) Priority 0
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 61
+2) All the start and end addresses occupied by this job: [[0, 129], [0, 105]]
+3) Arrival Time: 179
+4) Time the job entered the system: 1c59
+5) Time the job is leaving the system: 1cee
+6) Execution Time:36
+7) Time spent during I/O :60
+8) Priority 1
+9) Nature of Termination: ABNORMAL
+                        : ILLEGAL INSTRUCTION
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 64
+2) All the start and end addresses occupied by this job: [[206, 245], [168, 207]]
+3) Arrival Time: 191
+4) Time the job entered the system: 1c59
+5) Time the job is leaving the system: 1d16
+6) Execution Time:50
+7) Time spent during I/O :90
+8) Priority 0
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 67
+2) All the start and end addresses occupied by this job: [[0, 105]]
+3) Arrival Time: 202
+4) Time the job entered the system: 1d16
+5) Time the job is leaving the system: 1d3b
+6) Execution Time:37
+7) Time spent during I/O :0
+8) Priority 1
+9) Nature of Termination: ABNORMAL
+                        : MEMORY RANGE FAULT
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 71
+2) All the start and end addresses occupied by this job: [[128, 167]]
+3) Arrival Time: 212
+4) Time the job entered the system: 1d3b
+5) Time the job is leaving the system: 1d3c
+6) Execution Time:1
+7) Time spent during I/O :0
+8) Priority 1
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 72
+2) All the start and end addresses occupied by this job: [[0, 105]]
+3) Arrival Time: 215
+4) Time the job entered the system: 1d3b
+5) Time the job is leaving the system: 1d63
+6) Execution Time:37
+7) Time spent during I/O :0
+8) Priority 1
+9) Nature of Termination: ABNORMAL
+                        : MEMORY RANGE FAULT
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 68
+2) All the start and end addresses occupied by this job: [[208, 227]]
+3) Arrival Time: 204
+4) Time the job entered the system: 1d3b
+5) Time the job is leaving the system: 1d66
+6) Execution Time:3
+7) Time spent during I/O :0
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : ILLEGAL INSTRUCTION
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 69
+2) All the start and end addresses occupied by this job: [[228, 247]]
+3) Arrival Time: 207
+4) Time the job entered the system: 1d3b
+5) Time the job is leaving the system: 1d77
+6) Execution Time:8
+7) Time spent during I/O :20
+8) Priority 0
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 0
+2) All the start and end addresses occupied by this job: []
+3) Arrival Time: 0
+4) Time the job entered the system: null
+5) Time the job is leaving the system: 1d77
+6) Execution Time:0
+7) Time spent during I/O :0
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : MISSING JOB
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 75
+2) All the start and end addresses occupied by this job: [[0, 105]]
+3) Arrival Time: 222
+4) Time the job entered the system: 1d77
+5) Time the job is leaving the system: 1d79
+6) Execution Time:2
+7) Time spent during I/O :0
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : ACCESSING LOCKED MEMORY
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 75
+2) All the start and end addresses occupied by this job: [[0, 105]]
+3) Arrival Time: 222
+4) Time the job entered the system: 1d77
+5) Time the job is leaving the system: 1d79
+6) Execution Time:2
+7) Time spent during I/O :0
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : ACCESSING LOCKED MEMORY
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 75
+2) All the start and end addresses occupied by this job: [[208, 227], [120, 137]]
+3) Arrival Time: 231
+4) Time the job entered the system: 1d79
+5) Time the job is leaving the system: 1daf
+6) Execution Time:7
+7) Time spent during I/O :20
+8) Priority 1
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 79
+2) All the start and end addresses occupied by this job: [[228, 247], [138, 157]]
+3) Arrival Time: 238
+4) Time the job entered the system: 1d79
+5) Time the job is leaving the system: 1dba
+6) Execution Time:42
+7) Time spent during I/O :10
+8) Priority 1
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 73
+2) All the start and end addresses occupied by this job: [[168, 207], [84, 119]]
+3) Arrival Time: 218
+4) Time the job entered the system: 1d3b
+5) Time the job is leaving the system: 1dbb
+6) Execution Time:16
+7) Time spent during I/O :60
+8) Priority 1
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 81
+2) All the start and end addresses occupied by this job: []
+3) Arrival Time: 0
+4) Time the job entered the system: null
+5) Time the job is leaving the system: 1dbb
+6) Execution Time:0
+7) Time spent during I/O :0
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : MISSING JOB
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 80
+2) All the start and end addresses occupied by this job: [[158, 181]]
+3) Arrival Time: 242
+4) Time the job entered the system: 1d79
+5) Time the job is leaving the system: 1dc3
+6) Execution Time:3
+7) Time spent during I/O :0
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : ILLEGAL INSTRUCTION
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 76
+2) All the start and end addresses occupied by this job: [[128, 167], [44, 83]]
+3) Arrival Time: 229
+4) Time the job entered the system: 1d79
+5) Time the job is leaving the system: 1dca
+6) Execution Time:9
+7) Time spent during I/O :20
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : ILLEGAL INSTRUCTION
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 78
+2) All the start and end addresses occupied by this job: [[0, 105], [0, 21]]
+3) Arrival Time: 234
+4) Time the job entered the system: 1d79
+5) Time the job is leaving the system: 1dcb
+6) Execution Time:9
+7) Time spent during I/O :20
+8) Priority 0
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 81
+2) All the start and end addresses occupied by this job: [[84, 133]]
+3) Arrival Time: 250
+4) Time the job entered the system: 1dbb
+5) Time the job is leaving the system: 1dd4
+6) Execution Time:9
+7) Time spent during I/O :20
+8) Priority 1
+9) Nature of Termination: ABNORMAL
+                        : MEMORY RANGE FAULT
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 83
+2) All the start and end addresses occupied by this job: [[0, 21]]
+3) Arrival Time: 254
+4) Time the job entered the system: 1dcb
+5) Time the job is leaving the system: 1de5
+6) Execution Time:22
+7) Time spent during I/O :90
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : MEMORY RANGE FAULT
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 84
+2) All the start and end addresses occupied by this job: [[44, 83]]
+3) Arrival Time: 256
+4) Time the job entered the system: 1de5
+5) Time the job is leaving the system: 1de6
+6) Execution Time:1
+7) Time spent during I/O :0
+8) Priority 1
+9) Nature of Termination: ABNORMAL
+                        : MEMORY RANGE FAULT
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 85
+2) All the start and end addresses occupied by this job: [[158, 181]]
+3) Arrival Time: 261
+4) Time the job entered the system: 1de5
+5) Time the job is leaving the system: 1dec
+6) Execution Time:2
+7) Time spent during I/O :10
+8) Priority 1
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 87
+2) All the start and end addresses occupied by this job: [[0, 21]]
+3) Arrival Time: 269
+4) Time the job entered the system: 1de5
+5) Time the job is leaving the system: 1e3f
+6) Execution Time:26
+7) Time spent during I/O :20
+8) Priority 0
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 86
+2) All the start and end addresses occupied by this job: [[84, 133]]
+3) Arrival Time: 267
+4) Time the job entered the system: 1de5
+5) Time the job is leaving the system: 1e5e
+6) Execution Time:31
+7) Time spent during I/O :30
+8) Priority 0
+9) Nature of Termination: NORMAL
+
+
+---------------------------------------------------------------------------------
+1) Cumulative job identification Number in DECIMAL: 88
+2) All the start and end addresses occupied by this job: [[134, 169]]
+3) Arrival Time: 282
+4) Time the job entered the system: 1de5
+5) Time the job is leaving the system: 220a
+6) Execution Time:1001
+7) Time spent during I/O :10
+8) Priority 0
+9) Nature of Termination: ABNORMAL
+                        : INFINITE LOOP IN THE PROGRAM
+
+---------------------------------------------------------------------------------

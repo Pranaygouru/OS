@@ -1,0 +1,21 @@
+                                             Before Execution   After Execution
+PC     Instruction              R       EA      (R)   (EA)        (R)  (EA)  
+                                        Int     Int    Hex        Int   Hex  
+-------------------------------------------------------------------------------
+224     movei r7,0,r0            r7               0                 0      
+                                r0               0                 0 
+
+226            trap 2            r1               0                 6       
+228        move r6,r1            r6               0                 6      
+                                r1               6                 6 
+230    store0(r6), r7            r7    220        0     0           0    0 
+                                r6               6                 6 
+232            trap 2            r1               6                 7       
+64        move r6,r1            r6               6                 7      
+                                r1               7                 7 
+66     load r6,0(r7)            r6     50        7     0           6    0 
+                                r7               0                 0 
+68        move r1,r6            r1               7                 6      
+                                r6               6                 6 
+70            trap 1            r1               6                 6       
+              trap 0                                                       

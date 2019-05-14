@@ -1,52 +1,160 @@
+/*
+* Loader loads the information of each user job.
+* The job contains the information in hex value for trace
+* switch, Program size and starting address.
+* */
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
-import java.math.BigInteger;
-/** line and Buffered reader are declared and used to 
- * read file line by line and process the data into memory
- * No pre processing or parsing is done before keeping into memory
- * 
- * ->loader calls procedure memory with WR operation so that contents
- * are added into the array.  
- *  **/
-public class Loader {
- static String line;
- static BufferedReader reader;
- public void Loader(String x, String y) throws IOException {
-   FileReader fr = new FileReader(SYSTEM.path);
-   reader = new BufferedReader(fr);
-   line = reader.readLine();
-   x = hextobinary(x);
-   int load = Integer.parseInt(x);
-   int mainindex = 0;
-   /*Try and catch blocks are used to handle exceptions*/
-   try {
-    while ((line = reader.readLine()) != null) {
-     int i = 0;
-     String preBin = new BigInteger(line, 16).toString(2);
-     int num = line.length();
-     num = num * 4;
-     String form = "%" + num + "s";
-     String splitstring = String.format(form, preBin).replace(" ", "0");
-     char[] tempArr = splitstring.toCharArray();
-     for (int splitline = 0; splitline < splitstring.length();) {
-      String splitword = splitstring.substring(splitline, splitline + 16);
-      splitline = splitline + 16;
-      MEMORY.MEMORY(1, load, splitword); /*call for memory procedure*/
-      load++;
-     }
-    }
-   } catch (Exception e) {
-    System.exit(0);
-   }
-  }
-  /*converting the strings from hex to binary*/
- private String hextobinary(String x) {
-  String preBin = new BigInteger(x, 16).toString(2);
-  int num = x.length();
-  String form = "%16s";
-  String splitstring = String.format(form, preBin).replace(" ", "0");
-  return splitstring;
- }
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+@SuppressWarnings("unchecked")
+public class LOADER {
+private static int checkLength;
+public int LOADER(int x,int y) {
+int flag=0;
+int status = 0;
+try {
+
+SYSTEM.line = SYSTEM.reader.readLine();
+int count = 1;
+String regex = "^END*";
+Pattern r =  Pattern.compile(regex);
+Matcher m = r.matcher(SYSTEM.line);
+while (!m.find()) {
+String regex1 = "^JOB*";
+Pattern r1 = Pattern.compile(regex1);
+Matcher m1 = r1.matcher(SYSTEM.line);
+if (m1.find())
+{
+flag = 4;
+break;
 }
+if (count < SYSTEM.pc[SYSTEM.jobID].getProgramSize() * 2) {
+for (int j = 0; j < SYSTEM.line.length(); j = j + 2) {
+count++;
+String str = null;
+try {
+str = SYSTEM.line.substring(j, j + 2);
+} catch (Exception e) {
+    e.printStackTrace();
+SYSTEM.pc[SYSTEM.jobID].setNatureOfTermination("ABNORMAL");
+SYSTEM.N = 8;
+SYSTEM.dumpobj = SYSTEM.pc[SYSTEM.jobID];
+ERRORHANDLER.getErrorMap(SYSTEM.N);
+SYSTEM.pc[SYSTEM.jobID].setHexSystemClock(SYSTEM.intToHex(SYSTEM.clock));
+SYSTEM.pc[SYSTEM.jobID].setEndHexSystemClock(SYSTEM.intToHex(SYSTEM.clock));
+SYSTEM.pc[SYSTEM.jobID].setErrorMessage(ERRORHANDLER.getErrorMap(SYSTEM.N));
+SYSTEM.printOutputFile(SYSTEM.pc[SYSTEM.jobID]);
+MEMORY.freeMemory(SYSTEM.pc[SYSTEM.jobID]);
+flag = 2;
+}
+String binary = null;
+try {
+binary = SYSTEM.hexToBinary(str);
+} catch (Exception e) {
+    e.printStackTrace();
+SYSTEM.dumpobj = SYSTEM.pc[SYSTEM.jobID];
+SYSTEM.pc[SYSTEM.jobID].setNatureOfTermination("ABNORMAL");
+SYSTEM.N = 8;
+SYSTEM.pc[SYSTEM.jobID].setHexSystemClock(SYSTEM.intToHex(SYSTEM.clock));
+SYSTEM.pc[SYSTEM.jobID].setEndHexSystemClock(SYSTEM.intToHex(SYSTEM.clock));
+SYSTEM.pc[SYSTEM.jobID].setErrorMessage(ERRORHANDLER.getErrorMap(SYSTEM.N));
+SYSTEM.printOutputFile(SYSTEM.pc[SYSTEM.jobID]);
+MEMORY.freeMemory(SYSTEM.pc[SYSTEM.jobID]);
+flag = 2;
+
+}
+MEMORY.MEMORY("WRITE", x, binary);
+x = x + 1;
+}
+} else {
+status = 7;
+
+try {
+String[] st = SYSTEM.line.split(" ");
+if (SYSTEM.hextoint(st[0]) != 0 && SYSTEM.hextoint(st[0]) != 1) {
+SYSTEM.dumpobj = SYSTEM.pc[SYSTEM.jobID];
+SYSTEM.pc[SYSTEM.jobID].setNatureOfTermination("ABNORMAL");
+SYSTEM.N = 7;
+SYSTEM.pc[SYSTEM.jobID].setHexSystemClock(SYSTEM.intToHex(SYSTEM.clock));
+SYSTEM.pc[SYSTEM.jobID].setEndHexSystemClock(SYSTEM.intToHex(SYSTEM.clock));
+SYSTEM.pc[SYSTEM.jobID].setErrorMessage(ERRORHANDLER.getErrorMap(SYSTEM.N));
+SYSTEM.printOutputFile(SYSTEM.pc[SYSTEM.jobID]);
+MEMORY.freeMemory(SYSTEM.pc[SYSTEM.jobID]);
+status = 1;
+flag = 2;
+}
+if (status != 1)
+SYSTEM.pc[SYSTEM.jobID].setTraceSwitch(SYSTEM.hextoint(st[0]));
+if (st.length>1)
+if (SYSTEM.hextoint(st[1]) != 0 && SYSTEM.hextoint(st[1]) != 1) {
+SYSTEM.dumpobj = SYSTEM.pc[SYSTEM.jobID];
+SYSTEM.pc[SYSTEM.jobID].setNatureOfTermination("ABNORMAL");
+SYSTEM.N = 10;
+SYSTEM.pc[SYSTEM.jobID].setHexSystemClock(SYSTEM.intToHex(SYSTEM.clock));
+SYSTEM.pc[SYSTEM.jobID].setEndHexSystemClock(SYSTEM.intToHex(SYSTEM.clock));
+SYSTEM.pc[SYSTEM.jobID].setErrorMessage(ERRORHANDLER.getErrorMap(SYSTEM.N));
+SYSTEM.printOutputFile(SYSTEM.pc[SYSTEM.jobID]);
+MEMORY.freeMemory(SYSTEM.pc[SYSTEM.jobID]);
+status = 10;
+flag = 2;
+}
+if (status != 1 || status != 10)
+SYSTEM.pc[SYSTEM.jobID].setPriority(SYSTEM.hextoint(st[1]));
+} catch (Exception e) {
+    e.printStackTrace();
+SYSTEM.pc[SYSTEM.jobID].setNatureOfTermination("ABNORMAL");
+SYSTEM.dumpobj = SYSTEM.pc[SYSTEM.jobID];
+if (status == 1)
+SYSTEM.N = 7;
+else
+SYSTEM.N = 10;
+SYSTEM.pc[SYSTEM.jobID].setHexSystemClock(SYSTEM.intToHex(SYSTEM.clock));
+SYSTEM.pc[SYSTEM.jobID].setEndHexSystemClock(SYSTEM.intToHex(SYSTEM.clock));
+SYSTEM.pc[SYSTEM.jobID].setErrorMessage(ERRORHANDLER.getErrorMap(SYSTEM.N));
+SYSTEM.printOutputFile(SYSTEM.pc[SYSTEM.jobID]);
+MEMORY.freeMemory(SYSTEM.pc[SYSTEM.jobID]);
+flag = 2;
+}
+}
+SYSTEM.line = SYSTEM.reader.readLine();
+if (SYSTEM.line.equals("END"))
+break;
+}
+
+return flag;
+} catch (Exception e) {
+    e.printStackTrace();
+SYSTEM.pc[SYSTEM.jobID].setNatureOfTermination("ABNORMAL");
+SYSTEM.dumpobj = SYSTEM.pc[SYSTEM.jobID];
+if (status == 1)
+SYSTEM.N = 7;
+else
+SYSTEM.N = 10;
+SYSTEM.pc[SYSTEM.jobID].setHexSystemClock(SYSTEM.intToHex(SYSTEM.clock));
+SYSTEM.pc[SYSTEM.jobID].setEndHexSystemClock(SYSTEM.intToHex(SYSTEM.clock));
+SYSTEM.pc[SYSTEM.jobID].setErrorMessage(ERRORHANDLER.getErrorMap(SYSTEM.N));
+SYSTEM.printOutputFile(SYSTEM.pc[SYSTEM.jobID]);
+MEMORY.freeMemory(SYSTEM.pc[SYSTEM.jobID]);
+flag = 2;
+
+}
+
+return flag;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

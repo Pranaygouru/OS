@@ -1,0 +1,60 @@
+                                             Before Execution   After Execution
+PC     Instruction              R       EA      (R)   (EA)        (R)  (EA)  
+                                        Int     Int    Hex        Int   Hex  
+-------------------------------------------------------------------------------
+182            trap 2            r1               0                 9       
+184     movei r3,0,r0            r3               0                 0      
+                                r0               0                 0 
+186        move r2,r1            r2               0                 9      
+                                r1               9                 9 
+188      sgt r4,r3,r2            r4               0                 0      
+                                r3               0                 0
+                                r2               9                 9 
+190         bnez r4,30           r4               0                 0       
+192        move r5,r2            r5               0                 9      
+                                r2               9                 9 
+194      subi r5,r5,1            r5               9                 8      
+                                r5               9                 8 
+196        beqz r5,18            r5               8                 8       
+198      subi r2,r2,2            r2               9                 7      
+                                r2               9                 7 
+200        move r5,r2            r5               8                 7      
+                                r2               7                 7 
+202         beqz r2,6            r2               7                 7       
+
+204      subi r5,r5,1            r5               7                 6      
+                                r5               7                 6 
+206         beqz r5,8            r5               6                 6       
+208        bnez r2,-12           r2               7                 7       
+198      subi r2,r2,2            r2               7                 5      
+                                r2               7                 5 
+200        move r5,r2            r5               6                 5      
+                                r2               5                 5 
+202         beqz r2,6            r2               5                 5       
+204      subi r5,r5,1            r5               5                 4      
+                                r5               5                 4 
+206         beqz r5,8            r5               4                 4       
+208        bnez r2,-12           r2               5                 5       
+198      subi r2,r2,2            r2               5                 3      
+                                r2               5                 3 
+
+200        move r5,r2            r5               4                 3      
+                                r2               3                 3 
+202         beqz r2,6            r2               3                 3       
+204      subi r5,r5,1            r5               3                 2      
+                                r5               3                 2 
+206         beqz r5,8            r5               2                 2       
+208        bnez r2,-12           r2               3                 3       
+198      subi r2,r2,2            r2               3                 1      
+                                r2               3                 1 
+200        move r5,r2            r5               2                 1      
+                                r2               1                 1 
+202         beqz r2,6            r2               1                 1       
+204      subi r5,r5,1            r5               1                 0      
+                                r5               1                 0 
+206         beqz r5,8            r5               0                 0       
+
+216     movei r1,0,r0            r1               9                 0      
+                                r0               0                 0 
+218            trap 1            r1               0                 0       
+              trap 0                                                       

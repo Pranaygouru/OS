@@ -1,0 +1,12 @@
+1) current value of the clock: 8714
+2) mean user job run time: 99
+3) mean user job I/O time: 23
+4) mean user job in the SYSTEM: 75
+5) Total CPU idle time: 0
+6) Total time lost due to abnormally terminated jobs : 7592
+7) Number of jobs that terminated normally: 40
+8) Number of jobs that terminated abnormally: 42
+9) Highest degree of multiprogramming: 9
+10) Lowest degree of multiprogramming: 0
+11) Mean degree of multiprogramming: 2
+12) Mean Difference between arrival time and start time : 4598

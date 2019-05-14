@@ -1,0 +1,42 @@
+                                             Before Execution   After Execution
+PC     Instruction              R       EA      (R)   (EA)        (R)  (EA)  
+                                        Int     Int    Hex        Int   Hex  
+-------------------------------------------------------------------------------
+08     movei r7,0,r0            r7               0                 0      
+                                r0               0                 0 
+10            trap 2            r1               0                 9       
+12        move r6,r1            r6               0                 9      
+                                r1               9                 9 
+14    store0(r6), r7            r7      0        0     0           0    0 
+                                r6               9                 9 
+16            trap 2            r1               9                 9       
+
+18        move r6,r1            r6               9                 9      
+                                r1               9                 9 
+
+20    store2(r6), r7            r7      2        0     0           0    0 
+                                r6               9                 9 
+22            trap 2            r1               9                 5       
+24        move r6,r1            r6               9                 5      
+                                r1               5                 5 
+26    store4(r6), r7            r7      4        0     0           0    0 
+                                r6               5                 5 
+28            trap 2            r1               5                 8       
+30            trap 1            r1               8                 8       
+32     load r6,4(r7)            r6      4        5     0           5    0 
+                                r7               0                 0 
+34        move r1,r6            r1               8                 5      
+                                r6               5                 5 
+36            trap 1            r1               5                 5       
+38     load r6,2(r7)            r6      2        5     0           9    0 
+                                r7               0                 0 
+40        move r1,r6            r1               5                 9      
+                                r6               9                 9 
+42            trap 1            r1               9                 9       
+44     load r6,0(r7)            r6      0        9                 0    0 
+                                r7               0                 0 
+46        move r1,r6            r1               9                 0      
+                                r6               0                 0 
+
+48            trap 1            r1               0                 0       
+              trap 0                                                       
